@@ -3,9 +3,10 @@ body {
   border-width: 0;
   box-sizing: border-box;
   height: 100vh;
-
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
+
+
 
 main {
   display: flex;
