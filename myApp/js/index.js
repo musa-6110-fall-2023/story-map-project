@@ -15,13 +15,18 @@ L.control.layers(overlayMaps).addTo(map);
 control.addTo(map);*/
 
 /* === This is my Data === */
+/*
 const SchoolCensus = 'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/SchoolCensus.geojson'
-// add guncrime: https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+shootings&filename=shootings&format=geojson&skipfields=cartodb_id (note that they're points, not polygons)
 const rtcc = 'https://opendata.arcgis.com/datasets/f7ed68293c5e40d58f1de9c8435c3e84_0.geojson'
 const demo = 'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/census/DemoCamera_BG4326.geojson'
 const rent = 'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/census/RentCamera_BG4326.geojson'
 const schoolData =  'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/schoolonly/SchoolData_geo3452.geojson'
 const mort = 'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/census/mortCamera_BG4326.geojson'
+*/
+
+const gunCrimes = 'https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+shootings&filename=shootings&format=geojson&skipfields=cartodb_id'
+const vacancy = 'https://opendata.arcgis.com/datasets/f7ed68293c5e40d58f1de9c8435c3e84_0.geojson'
+const landCareLots = 'https://opendata.arcgis.com/datasets/370e90f4f3044170a85f098facb9684c_0.geojson' 
 
 /* === These are my vars for my functions to fill the slides === */
 const slideTitleDiv = document.querySelector('.slide-title');
@@ -139,6 +144,54 @@ function updateMap(mapToShow, slide) {
     });
   }  
 
+  if (slide.dataUse === "gunCrimes") {
+    fetch(mort)
+    .then(resp => resp.json())
+    .then(data => { 
+      L.geoJSON(data, {style: styleMort,  
+        onEachFeature: onEachFeatureMort
+      }).addTo(layerGroup)
+      });
+
+    fetch(rtcc)
+    .then(resp => resp.json())
+    .then(data => {
+      L.geoJSON(data, {onEachFeature: function(feature) {
+        var marker = L.marker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]],
+          {icon: iconuse});
+          secondlayerGroup.addLayer(marker);
+        }});
+      }); 
+
+      
+    const geoJsonLayer =  layerGroup;
+    return geoJsonLayer;
+  }  
+
+  if (slide.dataUse === "vacancy") {
+    fetch(rtcc)
+    .then(resp => resp.json())
+    .then(data => {
+      L.geoJSON(data, {
+        onEachFeature: function(feature, layer) {
+          if (feature.geometry.type === "Polygon") {
+            // Style or modify the polygon layer as needed.
+            layer.setStyle({
+              color: '#ff7800',   // Change to the desired stroke color.
+              weight: 2,          // Change to the desired stroke weight.
+              opacity: 0.35       // Change to the desired opacity.
+            });
+  
+            // If you wish to bind popup or do other interactions, you can add here.
+            // Example: layer.bindPopup('This is a polygon!');
+  
+            layerGroup.addLayer(layer);
+          }
+        }
+      });
+    });
+  }  
+
   if (slide.dataUse === "mortData") {
     fetch(mort)
     .then(resp => resp.json())
@@ -163,6 +216,30 @@ function updateMap(mapToShow, slide) {
     return geoJsonLayer;
   }  
 
+  if (slide.dataUse === "landCareLots") {
+    fetch(rtcc)
+    .then(resp => resp.json())
+    .then(data => {
+      L.geoJSON(data, {
+        onEachFeature: function(feature, layer) {
+          if (feature.geometry.type === "Polygon") {
+            // Style or modify the polygon layer as needed.
+            layer.setStyle({
+              color: '#00a40c',   // Change to the desired stroke color.
+              weight: 2,          // Change to the desired stroke weight.
+              opacity: 0.35       // Change to the desired opacity.
+            });
+  
+            // If you wish to bind popup or do other interactions, you can add here.
+            // Example: layer.bindPopup('This is a polygon!');
+  
+            layerGroup.addLayer(layer);
+          }
+        }
+      });
+    });
+  }  
+/*
   if (slide.dataUse === "demoData") {
     fetch(demo)
     .then(resp => resp.json())
@@ -176,7 +253,7 @@ function updateMap(mapToShow, slide) {
     return geoJsonLayer;
     
   }
-
+  
   if (slide.dataUse === "rentData") {
     fetch(rent)
     .then(resp => resp.json())
@@ -199,7 +276,7 @@ function updateMap(mapToShow, slide) {
     const geoJsonLayer =  layerGroup;  
     return geoJsonLayer;
 
-  } else {
+  } */ else {
     if (slide.icon && slide.img) {
       const geoJsonLayer = L.geoJSON(mapToShow, { pointToLayer: (p, latlng) => L.marker(latlng, 
         {icon: iconuse}) })
