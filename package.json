@@ -14,10 +14,15 @@
   "devDependencies": {
     "@wordpress/jest-puppeteer-axe": "^6.12.0",
     "eslint": "^8.48.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0"
   },
   "eslintConfig": {
-    "extends": ["eslint:recommended", "google"],
+    "extends": [
+      "eslint:recommended",
+      "google"
+    ],
     "parserOptions": {
       "ecmaVersion": "latest",
       "sourceType": "module"
@@ -31,6 +36,13 @@
     "rules": {
       "object-curly-spacing": "off",
       "max-len": "off"
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "declaration-empty-line-before": null,
+      "declaration-block-no-redundant-longhand-properties": null
     }
   }
 }
