@@ -1,6 +1,6 @@
 import { SlideDeck } from './slidedeck.js';
 
-const map = L.map('map', {zoomSnap:0}).setView([0, 0], 0);
+const map = L.map('map').setView([0, 0], 0);
 
 // ## The Base Tile Layer
 const baseTileLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}@2x.png', {
@@ -22,4 +22,5 @@ slideNextButton.addEventListener('click', () => deck.goNextSlide());
 
 deck.preloadFeatureCollections();
 deck.showCurrentSlide();
+
 

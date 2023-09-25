@@ -1,3 +1,67 @@
+/*Overall*/
+
+/*Intro Page*/
+
+.intro {
+  height: 120vh;
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to bottom right, #6D687590,#B5838D90, #E5989B90, #FFB4A2, #FFCDB2);
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  
+}
+
+.intro-subtitle {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+}
+
+/*Page 2 Intro to World Top 50*/
+
+
+.page2 { height: 120vh;
+  position: relative;
+  text-align: left;
+  color: white;
+  background-image: linear-gradient(to bottom left,#6D687590,#B5838D90, #E5989B90, #FFB4A2, #FFCDB2);
+}
+
+.page2-text {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  
+}
+
+
+.page2-subtitle {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+}
+
+/*Page 3*/
+
+
+/*Page 4*/
+
+
+
 body {
   margin: 0;
   border-width: 0;
@@ -6,10 +70,44 @@ body {
   font-family: 'Comfortaa', cursive;
 }
 
+
+.intro-2 {
+  height: 100vh;
+  position: relative;
+  text-align: left;
+  color: white;
+  background-image: linear-gradient(to bottom right, #FFCDB2, #FFB4A2, #E5989B90, #B5838D90, #6D687590);
+}
+
+.intro-3 {
+  height: 100vh;
+  position: relative;
+  text-align: left;
+  color: white;
+  background-image: linear-gradient(to bottom left,#6D687590,#B5838D90, #E5989B90, #FFB4A2, #FFCDB2);
+}
+
+
+
+.intro-data {
+  position:absolute;
+  align-items:center;
+  margin-left:4rem;
+  margin-right:5rem;
+  top: 30%;
+  left:0; 
+  background-color: #ffe9ec70;
+  width:90rem;
+  height:120vh;
+}
+
+
+
 .all-content{
   display: flex;
   flex-direction: row;
   height: 90vh;
+    position:fixed
 }
 
 h1 {
@@ -20,53 +118,75 @@ h1 {
 }
 
 h2 {
-  font-family: 'Poppins', serif;
   padding: 1rem;
+  line-height:2.3rem
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
   padding: 0.5rem;
 }
 
 .top-bar {
-  width: 100%;
-  height: 10%;
+  position:relative;
+  width: 50%;
   overflow-y: auto;
-  background-image: linear-gradient(to bottom right, #FFFDF6, #E2D4E0);
-  text-transform: uppercase;
-  color: #7C7E9D
+  color:  #FFFDF6;
+  z-index: 0;
 }
 
-
+.map-container {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  width: 100vh;
+  z-index: 0;
+}
 main {
   display: flex;
   height: 100%;
+  position:relative;
+  background-image: linear-gradient(to bottom right, #FFCDB2, #FFB4A2, #E5989B90, #B5838D90, #6D687590);
 }
 
 .map {
   width: 100%;
-  height: 100%;
+  z-index: 0;
+  height:90%;
+  width:95%;
+  margin-left:1%;
+  margin-right:1%;
+  margin-top:1%;
+  margin-bottom:1%;
+  position:relative;
+  box-shadow: -0.5rem 0 1rem #7C7E9D;
 }
 
 .hidden {
   display: none;
 }
 
+
 .slide-section {
   z-index: 1000;
-
+  background-color: #7C7E9D40;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-
+  position:absolute;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 70%;
+  margin-right: 5%;
+  color: #ffffff;
   box-shadow: -0.5rem 0 1rem #7C7E9D;
   padding: 1rem;
-  width: 20rem;
+  width: 25%;
+  height: 90%;
 }
 
 .slide-content {
   flex-grow: 1;
+  position:fixed;
 }
 
 .slide-controls {
@@ -74,27 +194,28 @@ main {
   justify-content: space-around;
   align-items: center;
   column-gap: 0.5rem;
-
+  position:relative;
   width: 100%;
 }
 
 .slide-nav-button {
   transition: all 0.1s;
-
+  position: relative;
   padding: 0;
   margin: 1rem;
   width: 4rem;
   height: 3rem;
   border: 1px solid #888;
   border-radius: 0.25rem;
-
-  background-color: #eee;
+  background-color: transparent;
   font-size: 1.5em;
+  column-gap: 10rem;
+  color: #ffffff
 }
 
 .slide-nav-button:hover {
   background-color: rgb(158, 65, 65);
-  color: #fff;
+  color: #ffffff;
 }
 
 .slide-nav-select {
