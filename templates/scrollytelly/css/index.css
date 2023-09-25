@@ -18,6 +18,10 @@ body {
   height: 100%;
 }
 
+.leaflet-tile {
+  filter: brightness(0.55) contrast(5) saturate(0.25) opacity(80%) sepia(40%); /* Adjust these values as desired */
+}
+
 .slide-section {
   position: relative;
   margin-top: -30vh;
