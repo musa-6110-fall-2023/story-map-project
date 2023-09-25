@@ -5,6 +5,52 @@ body {
   height: 100vh;
 
   font-family: 'Open Sans', sans-serif;
+
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: rgb(250, 215, 174);
+  background-color: rgb(4, 28, 22, 0.95);
+}
+
+.intro-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 5em;
+}
+
+.intro-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1.5em;
+  line-height: 1.5;
+  width: 70%;
+}
+
+.intro-img{
+  margin-top: auto;
+  margin-bottom: auto;
+  opacity: 50%;
+  height: 200vh;
+  width: 100%;
+}
+
+.intro-subtitle {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: 1em;
 }
 
 .map-container {
@@ -25,22 +71,43 @@ body {
   pointer-events: none;
 }
 
+h1{
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 24px;
+}
+
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.reference{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 60%;
+}
+
 .slide {
   margin-top: 90vh;
   margin-bottom: 90vh;
   margin-left: auto;
   margin-right: 2rem;
-  padding: 1rem;
-  box-shadow: -0.5rem 0 1rem rgba(0 0 0 / 50%);
-  border: 1px solid gray;
-  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: -0.5rem 0 1rem rgba(0 0 0 / 30%);
+  border: 0px solid rgb(168, 168, 168);
+  border-radius: 0.2rem;
+  backdrop-filter: blur(5px);
   pointer-events: initial;
 
   width: 25rem;
 
-  background-color: white;
-  color: black;
+  background-color: hsla(163, 64%, 8%, 0.8);
+  color: rgb(250, 215, 174);
 }
+
+
 
 .slide:first-child {
   margin-top: 0;
@@ -80,4 +147,26 @@ body {
 
 .slide-nav-select {
   min-width: 0;
+}
+
+.ending{
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: rgb(250, 215, 174);
+  border: 0px;
+  background-color: rgb(4, 28, 22, 0.6
+  );
+}
+
+.frame{
+  width: 80%;
+  height: 80%;
+  margin: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0px;
+  box-shadow: -0.5rem 0 1rem rgba(0 0 0 / 30%);
 }

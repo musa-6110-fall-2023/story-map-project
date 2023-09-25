@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "country": "egypt"
+        "country": "Egypt"
       },
       "geometry": {
         "coordinates": [
@@ -18,7 +18,7 @@
     {
       "type": "Feature",
       "properties": {
-        "country": "turkey"
+        "country": "Turkey"
       },
       "geometry": {
         "coordinates": [
@@ -32,7 +32,7 @@
     {
       "type": "Feature",
       "properties": {
-        "country": "syria"
+        "country": "Syria"
       },
       "geometry": {
         "coordinates": [
@@ -46,7 +46,7 @@
     {
       "type": "Feature",
       "properties": {
-        "country": "persia"
+        "country": "Persia"
       },
       "geometry": {
         "coordinates": [
@@ -60,7 +60,7 @@
     {
       "type": "Feature",
       "properties": {
-        "country": "yemen"
+        "country": "Yemen"
       },
       "geometry": {
         "coordinates": [
