@@ -4,7 +4,29 @@ body {
   box-sizing: border-box;
   height: 100vh;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rockwell', serif;
+}
+
+.header-contianer{
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #212529!important;
+}
+
+.text-white{
+  color: #fff
+}
+
+.header_sw{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-left: 20%;
+  list-style: none;
 }
 
 .map-container {
