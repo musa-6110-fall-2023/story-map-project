@@ -77,13 +77,20 @@ h1{
 }
 
 p{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
   line-height: 1.5;
 }
 
+.illustration{
+  width:100%;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  border-radius: 0.2rem;
+}
+
 .reference{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
   line-height: 1.5;
   opacity: 60%;
@@ -114,7 +121,7 @@ p{
 }
 
 .slide:last-child {
-  margin-bottom: 40vh;
+  margin-bottom: 80vh;
 }
 
 .slide-controls {
@@ -155,18 +162,26 @@ p{
   text-align: center;
   color: rgb(250, 215, 174);
   border: 0px;
-  background-color: rgb(4, 28, 22, 0.6
-  );
+  background-color: rgb(4, 28, 22, 0.6);
+}
+
+.endTitle{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 24px;
 }
 
 .frame{
-  width: 80%;
-  height: 80%;
-  margin: 20px;
+  width: 75%;
+  height: 75%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 0px;
   box-shadow: -0.5rem 0 1rem rgba(0 0 0 / 30%);
+  opacity: 80%;
 }

@@ -1,0 +1,117 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "Ethiopia"
+        },
+        "geometry": {
+          "coordinates": [
+            39.67052616037847,
+            8.685598173104424
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "sumatra"
+        },
+        "geometry": {
+          "coordinates": [
+            101.42281862938023,
+            -0.4903617184086215
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "papua new guinea"
+        },
+        "geometry": {
+          "coordinates": [
+            145.21138868299352,
+            -6.286335319169439
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "Colombia"
+        },
+        "geometry": {
+          "coordinates": [
+            -73.23646484089302,
+            3.1425356654204677
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "peru"
+        },
+        "geometry": {
+          "coordinates": [
+            -75.56686310869767,
+            -10.207593912792532
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "Brazil"
+        },
+        "geometry": {
+          "coordinates": [
+            -51.63770084574577,
+            -9.691801086284869
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "guatemala"
+        },
+        "geometry": {
+          "coordinates": [
+            -90.30694554604827,
+            15.803037775256385
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "honduras"
+        },
+        "geometry": {
+          "coordinates": [
+            -86.83546493634745,
+            14.67519640249428
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      }
+    ]
+  }

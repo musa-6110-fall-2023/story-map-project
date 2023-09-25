@@ -15,12 +15,9 @@ class SlideDeck {
       this.currentSlideIndex = 0;
       this.coffeeMarker = L.icon({
           iconUrl: 'media/coffeemarker.png',
-      
-          iconSize:     [38, 95], // size of the icon
-          shadowSize:   [50, 64], // size of the shadow
-          iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-          shadowAnchor: [4, 62],  // the same for the shadow
-          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+          iconSize:     [38, 38], // size of the icon
+          iconAnchor:   [19, 44], // point of the icon which will correspond to marker's location
+          // popupAnchor:  [100,100] // point from which the popup should open relative to the iconAnchor
       });
     }
   
@@ -41,7 +38,7 @@ class SlideDeck {
       const geoJsonLayer = L.geoJSON(data, { 
                                             pointToLayer: (p, latlng) => L.marker(latlng, {icon: this.coffeeMarker}) 
                                            })
-                                            .bindTooltip((l) => l.feature.properties.country+ "<br>" + l.feature.properties.year)
+                                            .bindTooltip((l) => l.feature.properties.label)
                                             .addTo(this.dataLayer);
   
       return geoJsonLayer;
