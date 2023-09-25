@@ -4,7 +4,88 @@ html, body{
   font-family: 'Raleway', sans-serif;
 }
 
+/* Title Page */
 
+.slide-detail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+.cover h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cover p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, rgb(68,1,84),rgb(62,74,137),rgb(38,130,142),rgb(53,183,121), rgb(180,222,44), rgb(253,231,37), rgb(253, 170, 37), rgb(253, 80, 37));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+
+}
+
+
+
+
+.cover a {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  transform: translate(0, -50%);
+  color: #000000;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.cover a:hover {
+  opacity: .5;
+}
+
+#section01 a {
+  padding-top: 60px;
+}
+#section01 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+
+/* Map starts from here*/
 .map-container {
   position: sticky;
   top: 0;
@@ -21,14 +102,14 @@ html, body{
 }
 
 .slide {
-  border: 1px solid rgb(231, 233, 191);
+  border: 1px solid rgb(36, 36, 35);
   margin-top: 0;
   margin-bottom: 70vh;
   margin-right: 2rem;
   margin-left: auto;
   width: 20rem;
   padding: 1rem;
-  background-color: rgb(240 240 240);
+  background-color: rgb(37, 35, 35);
 }
 
 
@@ -37,7 +118,7 @@ html, body{
   padding-top: 0;
   width: 20rem;
   pointer-events: auto;
-  box-shadow: -0.7rem 0 1rem rgba(7, 56, 116, 0.5);
+  box-shadow: -0.7rem 0 1rem rgba(56, 44, 123, 0.531);
 }
 /* Research Map */
 .slide:nth-child(2) {
@@ -79,9 +160,32 @@ html, body{
   box-shadow: -0.7rem 0 1rem rgba(7, 56, 116, 0.5);
 }
 
+.mySlides_02 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  pointer-events: auto;
+}
+
 .slide-detail {
   width: 100%;
   height: 100vh;
   background-color: rgb(255, 255, 255);
   margin-top: 5rem;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: white;
 }

@@ -1,16 +1,18 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "properties": {},
-        "geometry": {
-          "coordinates": [
-            -76.48508861594729,
-            42.449877587090896
-          ],
-          "type": "Point"
-        }
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Ithaca"
+      },
+      "geometry": {
+        "coordinates": [
+          -76.48510065931643,
+          42.449903991247766
+        ],
+        "type": "point"
       }
-    ]
-  }
+    }
+  ]
+}
