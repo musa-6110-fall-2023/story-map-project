@@ -29,8 +29,87 @@ class SlideDeck {
   */
   updateDataLayer(data) {
     this.dataLayer.clearLayers();
-    const geoJsonLayer = L.geoJSON(data, { pointToLayer: (p, latlng) => L.marker(latlng) })
-        .bindTooltip((l) => l.feature.properties.label)
+
+    // Create an L.icon object
+    function calcStyle(feature) {
+      if (feature.properties.category === "landscape design") {
+        return {
+          stroke: false,
+          fillColor: '#CC4A45',
+          fillOpacity: 0.9,
+          weight: 2,
+        };
+      } else if (feature.properties.category === "urban design") {
+        return {
+          stroke: false,
+          fillColor: '#E86651',
+          fillOpacity: 0.9,
+          weight: 2,
+        };
+      } else if (feature.properties.category === "architecture design") {
+        return {
+          stroke: false,
+          fillColor: '#E88958',
+          fillOpacity: 0.9,
+          weight: 2,
+        };
+      }
+
+      if (feature.geometry.type === 'Point') {
+        return {};
+      }
+
+      return {
+        stroke: true,
+        color: '#FF5C56',
+        opacity: 0.5,
+        fillOpacity: 0.1,
+        weight: 2,
+      };
+    }
+
+    // function calcCat(feature) {
+    //   if (feature.properties.category === 7) {
+    //     return {
+    //       stroke: false,
+    //       color: 'red',
+    //       opacity: 0.5,
+    //       fillOpacity: 0.1,
+    //       weight: 2,
+    //     };
+    //   } else if (feature.properties.category === 8) {
+
+    //     return {
+    //       stroke: false,
+    //       color: '#FF5C56',
+    //       opacity: 0.5,
+    //       fillOpacity: 0.1,
+    //       weight: 2,
+    //     };
+    //   } else {
+    //     return {
+    //       stroke: false,
+    //       color: '#FF5C56',
+    //       opacity: 0.5,
+    //       fillOpacity: 0.1,
+    //       weight: 2,
+    //     };
+    //   }
+    // }
+
+    const geoJsonLayer = L.geoJSON(data, {
+          style: calcStyle,  
+//          pointToLayer: (p, latlng) => L.marker(latlng, { /* specify icon to use */ }) 
+          pointToLayer: (p, latlng) => L.circleMarker(latlng, { 
+            /* specify some style */ 
+              stroke: false,
+              fillColor: '#FFAD61',
+              fillOpacity: 0.9,
+              radius: 8, 
+          }
+          ) 
+          })
+        .bindTooltip((l) => l.feature.properties.title) //set tooltip display
         .addTo(this.dataLayer);
 
     return geoJsonLayer;
@@ -84,7 +163,7 @@ class SlideDeck {
     const handleFlyEnd = () => {
       if (slide.showpopups) {
         layer.eachLayer((l) => {
-          l.bindTooltip(l.feature.properties.label, { permanent: true });
+          l.bindTooltip(l.feature.properties.title, { permanent: true });
           l.openTooltip();
         });
       }

@@ -3546,6 +3546,7 @@
       "type": "Feature",
       "properties": {
         "label": "Harvey Mudd College",
+        "category": 7,
         "era": "college",
         "type": "point"
       },

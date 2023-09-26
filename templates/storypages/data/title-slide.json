@@ -64,8 +64,7 @@
         "date": "06.2023 - 08.2023",
         "type": "professional work",
         "project leader": "Ponnapa Prakkamakul",
-        "location": "Fishtown County, Philadelphia, Pennsylvania",
-        "media": "Digital drawing & physical modeling"
+        "location": "Leather District, Boston, Massachusetts"
       },
       "geometry": {
         "coordinates": [
@@ -79,7 +78,12 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Pearl of Green: Miegakure (Hide and Reveal)"
+        "title": "Pearl of Green: Miegakure (Hide and Reveal)",
+        "date": "10.2021 - 12.2021",
+        "type": "group academic work",
+        "co-worker": "Xuan Lin, Kelin Mu",
+        "location": "Chicago, Illinois",
+        "media": "Digital drawing"
       },
       "geometry": {
         "coordinates": [
@@ -93,7 +97,12 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Davis Hall Green Wall"
+        "title": "Davis Hall Green Wall",
+        "date": "09.2021",
+        "type": "individual academic work",
+        "instructor": "Chip Sullivan",
+        "location": "Berkeley, California",
+        "media": "watercolor"
       },
       "geometry": {
         "coordinates": [
@@ -107,7 +116,12 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Friendship Park: Reunion on the Border"
+        "title": "Friendship Park: Reunion on the Border",
+        "date": "02.2021 - 05.2021, 03.2022 - 05.2022",
+        "type": "individual academic work",
+        "instructor": "Karl Kullmann, Damir Hurdich",
+        "location": "San Diego, California",
+        "media": "Digital drawing"
       },
       "geometry": {
         "coordinates": [
@@ -121,7 +135,11 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Back Home: Mexican Community Design"
+        "title": "Back Home: Mexican Community Design",
+        "date": "02.2021 - 12.2021",
+        "type": "individual academic work",
+        "location": "San Diego, California",
+        "media": "Digital drawing"
       },
       "geometry": {
         "coordinates": [
@@ -135,7 +153,12 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Trans-Alaska: Post-Oil Urban Regeneration"
+        "title": "Trans-Alaska: Post-Oil Urban Regeneration",
+        "date": "05.2021 - 12.2021",
+        "type": "group academic work",
+        "co-worker": "Xuan Liu",
+        "location": "Valdez, Alaska",
+        "media": "Digital drawing"
       },
       "geometry": {
         "coordinates": [
@@ -149,7 +172,12 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Trans-Alaska: Post-Oil Urban Regeneration"
+        "title": "Trans-Alaska: Post-Oil Urban Regeneration",
+        "date": "05.2021 - 12.2021",
+        "type": "group academic work",
+        "co-worker": "Xuan Liu",
+        "location": "Glennallen, Alaska",
+        "media": "Digital drawing"
       },
       "geometry": {
         "coordinates": [
@@ -163,7 +191,12 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Trans-Alaska: Post-Oil Urban Regeneration"
+        "title": "Trans-Alaska: Post-Oil Urban Regeneration",
+        "date": "05.2021 - 12.2021",
+        "type": "group academic work",
+        "co-worker": "Xuan Liu",
+        "location": "North Pole, Alaska",
+        "media": "Digital drawing"
       },
       "geometry": {
         "coordinates": [
@@ -177,7 +210,12 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Performing Oasis: Art Pilgrimage"
+        "title": "Performing Oasis: Art Pilgrimage",
+        "date": "06.2023 - 08.2023",
+        "type": "group academic work",
+        "co-worker": "Sihan Zhao",
+        "location": "Siwa Oasis, Egypt",
+        "media": "Digital drawing"
       },
       "geometry": {
         "coordinates": [
