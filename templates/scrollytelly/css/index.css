@@ -7,6 +7,8 @@ body {
   font-family: 'Rockwell', serif;
 }
 
+
+
 .header-contianer{
   width: 100%;
   padding-right: var(--bs-gutter-x,.75rem);
@@ -19,6 +21,52 @@ body {
 .text-white{
   color: #fff
 }
+
+.title-contianer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);  /* Semi-transparent black background */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  opacity: 0;
+  transition: opacity 0.3s; /* Smooth transition effect */
+}
+
+.text-image-container{
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+#title{
+  color: #ffffff;
+  font-family: 'Rockwell', serif;
+  font-size: 60px;
+  text-align: center;
+}
+
+#sub-title{
+  color: #ccddee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+
 
 .header_sw{
   display: flex;
@@ -43,6 +91,19 @@ body {
 
 .leaflet-tile {
   filter: brightness(0.55) contrast(5) saturate(0.25) opacity(80%) sepia(40%); /* Adjust these values as desired */
+}
+
+.background-page{
+  height: 100vh;
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+#background-pic {
+  width:100%;
+  height:100%;
+  object-fit: cover;
 }
 
 .slide-section {
@@ -108,3 +169,4 @@ body {
 .slide-nav-select {
   min-width: 0;
 }
+
