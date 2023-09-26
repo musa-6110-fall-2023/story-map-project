@@ -60,10 +60,10 @@ class SlideDeck {
       }
 
       return {
-        stroke: true,
+        stroke: false,
         color: '#FF5C56',
         opacity: 0.5,
-        fillOpacity: 0.1,
+        fillOpacity: 0,
         weight: 2,
       };
     }
