@@ -271,6 +271,64 @@
             ]
           ]
         }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Pearl of Green: Miegakure (Hide and Reveal)",
+          "date": "10.2021 - 12.2021",
+          "type": "group academic work",
+          "category": "landscape design",
+          "co-worker": "Xuan Lin, Kelin Mu",
+          "location": "Chicago, Illinois",
+          "media": "Digital drawing"
+        },
+        "geometry": {
+          "coordinates": [
+            -87.65206989588485,
+            41.985117723437156
+          ],
+          "type": "Point"
+        },
+        "id": 4
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Michigan State University Facilities and Land Use Plan",
+          "date": "06.2023 - 08.2023",
+          "type": "professional work",
+          "category": "urban design",
+          "project leader": "Tyler Patrick and Romil Sheth",
+          "location": "East Lansing, Michigan"
+        },
+        "geometry": {
+          "coordinates": [
+            -84.4809094500271,
+            42.72559668913698
+          ],
+          "type": "Point"
+        },
+        "id": 13
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Lake Erie Coastal Units",
+          "date": "09.2023 - present",
+          "type": "professional work",
+          "category": "urban design",
+          "project leader": "Sean Burkholder",
+          "location": "Lake Erie, New York"
+        },
+        "geometry": {
+          "coordinates": [
+            -79.01669333780501,
+            42.69134594181227
+          ],
+          "type": "Point"
+        },
+        "id": 14
       }
     ]
   }

@@ -271,6 +271,66 @@
             ]
           ]
         }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Trans-Alaska: Post-Oil Urban Regeneration",
+          "date": "05.2021 - 12.2021",
+          "type": "group academic work",
+          "category": "urban design",
+          "co-worker": "Xuan Liu",
+          "location": "Valdez, Alaska",
+          "media": "Digital drawing"
+        },
+        "geometry": {
+          "coordinates": [
+            -146.37494634234056,
+            61.087493234611145
+          ],
+          "type": "Point"
+        },
+        "id": 8
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Trans-Alaska: Post-Oil Urban Regeneration",
+          "date": "05.2021 - 12.2021",
+          "type": "group academic work",
+          "category": "urban design",
+          "co-worker": "Xuan Liu",
+          "location": "Glennallen, Alaska",
+          "media": "Digital drawing"
+        },
+        "geometry": {
+          "coordinates": [
+            -145.5481195369216,
+            62.10932148446071
+          ],
+          "type": "Point"
+        },
+        "id": 9
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Trans-Alaska: Post-Oil Urban Regeneration",
+          "date": "05.2021 - 12.2021",
+          "type": "group academic work",
+          "category": "urban design",
+          "co-worker": "Xuan Liu",
+          "location": "North Pole, Alaska",
+          "media": "Digital drawing"
+        },
+        "geometry": {
+          "coordinates": [
+            -147.34913846892232,
+            64.75134144476874
+          ],
+          "type": "Point"
+        },
+        "id": 10
       }
     ]
   }

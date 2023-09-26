@@ -41,6 +41,10 @@ h2 {
   font-weight: bold;
 }
 
+p {
+  margin: 0.2em;
+}
+
 .link {
   color:#888;
 }

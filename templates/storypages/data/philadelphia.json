@@ -271,6 +271,65 @@
             ]
           ]
         }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Planting for the Future: Post-Industrial Delaware Waterfront",
+          "date": "01.2023 - 05.2023",
+          "type": "individual academic work",
+          "category": "landscape design",
+          "instructor": "Karen M’Closkey",
+          "location": "Fishtown County, Philadelphia, Pennsylvania",
+          "media": "Digital drawing & physical modeling"
+        },
+        "geometry": {
+          "coordinates": [
+            -75.12497468160959,
+            39.96822642748734
+          ],
+          "type": "Point"
+        },
+        "id": 0
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Capturing the Moon: Symbolism of Emotional Sacredness",
+          "date": "10.2022 - 12.2022",
+          "type": "individual academic work",
+          "category": "landscape design",
+          "instructor": "Douglas Robb",
+          "location": "Wissahickon Valley, Philadelphia, Pennsylvania",
+          "media": "Digital drawing & physical modeling"
+        },
+        "geometry": {
+          "coordinates": [
+            -75.22313845586301,
+            40.065829026567854
+          ],
+          "type": "Point"
+        },
+        "id": 1
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Falling",
+          "date": "9.2022",
+          "type": "1:1 Field Measurement Drawing",
+          "category": "drawing",
+          "location": "Wissahickon Valley, Philadelphia, Pennsylvania",
+          "media": "pen"
+        },
+        "geometry": {
+          "coordinates": [
+            -75.22096847902965,
+            40.065089541693766
+          ],
+          "type": "Point"
+        },
+        "id": 2
       }
     ]
   }

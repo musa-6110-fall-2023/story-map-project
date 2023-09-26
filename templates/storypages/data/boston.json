@@ -271,6 +271,25 @@
             ]
           ]
         }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Joyful Stitch",
+          "date": "06.2023 - 08.2023",
+          "type": "professional work",
+          "category": "community engagement",
+          "project leader": "Ponnapa Prakkamakul",
+          "location": "Leather District, Boston, Massachusetts"
+        },
+        "geometry": {
+          "coordinates": [
+            -71.05725813857131,
+            42.352283593653596
+          ],
+          "type": "Point"
+        },
+        "id": 3
       }
     ]
   }
