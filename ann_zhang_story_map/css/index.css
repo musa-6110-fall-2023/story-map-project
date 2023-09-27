@@ -27,6 +27,24 @@
   font-size: 1.2em;
 }
 
+/*Intro 2: Data*/
+.intro-data-page {
+  height: 120vh;
+  position: relative;
+  text-align: left;
+  color: white;
+  background-image: linear-gradient(to bottom right, #FFCDB2, #FFB4A2, #E5989B90, #B5838D90, #6D687590);
+}
+
+.intro-data{
+  position:absolute;
+  align-items:center;
+  top: 20%;
+  background-color: #ffe9ec70;
+  width:100%;
+
+}
+
 /*Page 2 Intro to World Top 50*/
 
 
@@ -37,29 +55,70 @@
   background-image: linear-gradient(to bottom left,#6D687590,#B5838D90, #E5989B90, #FFB4A2, #FFCDB2);
 }
 
-.page2-text {
+.page2-title {
   position: absolute;
-  top: 10rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 5rem;
+  left: 5rem;
   font-size: 2.5em;
   
 }
 
-
 .page2-subtitle {
   position: absolute;
-  top: 75%;
-  left: 40%;
-  transform: translate(-50%, -50%);
+  top: 40rem;
+  left: 5rem;
   font-size: 1em;
 }
 
-/*Page 3*/
 
+.page2-body {
+  position: absolute;
+  Top: 35rem;
+  left:5rem;
+  margin: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+}
+
+
+.logoimg1 {
+  position:absolute;
+  top:10rem;
+  left:5rem;
+}
+
+.logoimg2 {
+  position:absolute;
+  top:10rem;
+  left:45rem;
+}
+
+/*Page 3*/
+.data-page {
+  height: 120vh;
+  position: relative;
+  text-align: left;
+  color: white;
+  background-image: linear-gradient(to bottom right, #FFCDB2, #FFB4A2, #E5989B90, #B5838D90, #6D687590);
+}
+
+.data {
+  position:absolute;
+  align-items:center;
+  top: 20%;
+  background-color: #ffe9ec70;
+  width:100%;
+}
+
+.data-subtitle{
+  position: absolute;
+  top: 9rem;
+  left: 5rem;
+  font-size: 1em;
+}
 
 /*Page 4*/
-
 
 
 body {
@@ -87,19 +146,6 @@ body {
   background-image: linear-gradient(to bottom left,#6D687590,#B5838D90, #E5989B90, #FFB4A2, #FFCDB2);
 }
 
-
-
-.intro-data {
-  position:absolute;
-  align-items:center;
-  margin-left:4rem;
-  margin-right:5rem;
-  top: 30%;
-  left:0; 
-  background-color: #ffe9ec70;
-  width:90rem;
-  height:120vh;
-}
 
 
 
@@ -165,6 +211,8 @@ main {
   display: none;
 }
 
+
+/*Slide Control*/
 
 .slide-section {
   z-index: 1000;

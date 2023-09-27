@@ -1,0 +1,206 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "background": "white",
+    "padding": 5,
+    "width": 500,
+    "height": 500,
+    "title": {"text": "Number of Bars in Cities", "frame": "group"},
+    "style": "cell",
+    "data": [
+      {
+        "name": "data-a292bb178d30c4a24a6d30f3f345d85b",
+        "values": [
+          {"City": "Abu Dhabi", "Figure": 270, "Date": 2019},
+          {"City": "Amsterdam", "Figure": 1119, "Date": 2021},
+          {"City": "Austin", "Figure": 272, "Date": 2021},
+          {"City": "Barcelona", "Figure": 450, "Date": 2021},
+          {"City": "Bogotá", "Figure": 12348, "Date": 2017},
+          {"City": "Brasília", "Figure": 106, "Date": 2019},
+          {"City": "Brussels", "Figure": 1743, "Date": 2013},
+          {"City": "Buenos Aires", "Figure": 11189, "Date": 2016},
+          {"City": "Chengdu", "Figure": 2078, "Date": 2016},
+          {"City": "Dublin", "Figure": 773, "Date": 2017},
+          {"City": "Edinburgh", "Figure": 395, "Date": 2021},
+          {"City": "Helsinki", "Figure": 180, "Date": 2018},
+          {"City": "Hong Kong", "Figure": 1035, "Date": 2021},
+          {"City": "Istanbul", "Figure": 304, "Date": 2015},
+          {"City": "Lisbon", "Figure": 392, "Date": 2018},
+          {"City": "London", "Figure": 3235, "Date": 2020},
+          {"City": "Los Angeles", "Figure": 1644, "Date": 2018},
+          {"City": "Madrid", "Figure": 5877, "Date": 2014},
+          {"City": "Melbourne", "Figure": 2840, "Date": 2018},
+          {"City": "Miami", "Figure": 1265, "Date": null},
+          {"City": "Milan", "Figure": 4878, "Date": 2019},
+          {"City": "Montréal", "Figure": 2478, "Date": 2019},
+          {"City": "Moscow", "Figure": 1421, "Date": 2018},
+          {"City": "New York", "Figure": 2113, "Date": 2012},
+          {"City": "Nanjing", "Figure": 80, "Date": 2019},
+          {"City": "Oslo", "Figure": 250, "Date": 2018},
+          {"City": "Paris", "Figure": 4282, "Date": 2021},
+          {"City": "Rome", "Figure": 9515, "Date": 2017},
+          {"City": "San Francisco", "Figure": 469, "Date": 2017},
+          {"City": "São Paulo", "Figure": 30000, "Date": 2016},
+          {"City": "Seoul", "Figure": 15296, "Date": 2019},
+          {"City": "Shanghai", "Figure": 2693, "Date": 2015},
+          {"City": "Shenzhen", "Figure": 1521, "Date": 2018},
+          {"City": "Singapore", "Figure": 660, "Date": 2016},
+          {"City": "Stockholm", "Figure": 965, "Date": 2021},
+          {"City": "Sydney", "Figure": 802, "Date": 2018},
+          {"City": "Taipei", "Figure": 200, "Date": 2021},
+          {"City": "Tokyo", "Figure": 29376, "Date": 2016},
+          {"City": "Toronto", "Figure": 483, "Date": 2018}
+        ]
+      },
+      {
+        "name": "data_0",
+        "source": "data-a292bb178d30c4a24a6d30f3f345d85b",
+        "transform": [
+          {
+            "type": "stack",
+            "groupby": ["City"],
+            "field": "Figure",
+            "sort": {"field": ["Date"], "order": ["descending"]},
+            "as": ["Figure_start", "Figure_end"],
+            "offset": "zero"
+          },
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"Figure\"]) && isFinite(+datum[\"Figure\"])"
+          }
+        ]
+      }
+    ],
+    "marks": [
+      {
+        "type": "group",
+        "from": {
+          "facet": {
+            "data": "data_0",
+            "name": "stack_group_main",
+            "groupby": ["City"],
+            "aggregate": {
+              "fields": [
+                "Figure_start",
+                "Figure_start",
+                "Figure_end",
+                "Figure_end"
+              ],
+              "ops": ["min", "max", "min", "max"]
+            }
+          }
+        },
+        "encode": {
+          "update": {
+            "x": {"scale": "x", "field": "City"},
+            "width": {"signal": "max(0.25, bandwidth('x'))"},
+            "y": {
+              "signal": "min(scale('y',datum[\"min_Figure_start\"]),scale('y',datum[\"max_Figure_start\"]),scale('y',datum[\"min_Figure_end\"]),scale('y',datum[\"max_Figure_end\"]))"
+            },
+            "y2": {
+              "signal": "max(scale('y',datum[\"min_Figure_start\"]),scale('y',datum[\"max_Figure_start\"]),scale('y',datum[\"min_Figure_end\"]),scale('y',datum[\"max_Figure_end\"]))"
+            },
+            "clip": {"value": true},
+            "cornerRadiusTopLeft": {"value": 3},
+            "cornerRadiusTopRight": {"value": 3}
+          }
+        },
+        "marks": [
+          {
+            "type": "group",
+            "encode": {
+              "update": {
+                "y": {"field": {"group": "y"}, "mult": -1},
+                "width": {"field": {"group": "width"}}
+              }
+            },
+            "marks": [
+              {
+                "name": "marks",
+                "type": "rect",
+                "style": ["bar"],
+                "from": {"data": "stack_group_main"},
+                "encode": {
+                  "update": {
+                    "fill": {"scale": "color", "field": "Date"},
+                    "ariaRoleDescription": {"value": "bar"},
+                    "description": {
+                      "signal": "\"City: \" + (isValid(datum[\"City\"]) ? datum[\"City\"] : \"\"+datum[\"City\"]) + \"; Figure: \" + (format(datum[\"Figure\"], \"\")) + \"; Date: \" + (isValid(datum[\"Date\"]) ? datum[\"Date\"] : \"\"+datum[\"Date\"])"
+                    },
+                    "width": {"field": {"group": "width"}},
+                    "y": {"scale": "y", "field": "Figure_end"},
+                    "y2": {"scale": "y", "field": "Figure_start"}
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "scales": [
+      {
+        "name": "x",
+        "type": "band",
+        "domain": {"data": "data_0", "field": "City", "sort": true},
+        "range": [0, {"signal": "width"}],
+        "paddingInner": 0.1,
+        "paddingOuter": 0.05
+      },
+      {
+        "name": "y",
+        "type": "linear",
+        "domain": {"data": "data_0", "fields": ["Figure_start", "Figure_end"]},
+        "range": [{"signal": "height"}, 0],
+        "nice": true,
+        "zero": true
+      },
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": {"data": "data_0", "field": "Date", "sort": true},
+        "range": "ordinal",
+        "interpolate": "hcl"
+      }
+    ],
+    "axes": [
+      {
+        "scale": "y",
+        "orient": "left",
+        "gridScale": "x",
+        "grid": true,
+        "tickCount": {"signal": "ceil(height/40)"},
+        "domain": false,
+        "labels": false,
+        "aria": false,
+        "maxExtent": 0,
+        "minExtent": 0,
+        "ticks": false,
+        "zindex": 0
+      },
+      {
+        "scale": "x",
+        "orient": "bottom",
+        "grid": false,
+        "title": "City",
+        "labelAlign": "right",
+        "labelAngle": 270,
+        "labelBaseline": "middle",
+        "zindex": 0
+      },
+      {
+        "scale": "y",
+        "orient": "left",
+        "grid": false,
+        "title": "Figure",
+        "labelOverlap": true,
+        "tickCount": {"signal": "ceil(height/40)"},
+        "zindex": 0
+      }
+    ],
+    "legends": [{"fill": "color", "symbolType": "square", "title": "Date"}],
+    "config": {
+      "style": {
+        "group-title": {"font": "Monospace", "fontSize": 20, "fill": "Black"}
+      }
+    }
+  }

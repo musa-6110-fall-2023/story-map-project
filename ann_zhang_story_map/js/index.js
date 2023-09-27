@@ -9,6 +9,7 @@ const baseTileLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_sm
 }).addTo(map);
 
 
+
 // ## Interface Elements
 const slides = document.querySelectorAll('.slide');
 const slidePrevButton = document.querySelector('#prev-slide');
@@ -23,4 +24,18 @@ slideNextButton.addEventListener('click', () => deck.goNextSlide());
 deck.preloadFeatureCollections();
 deck.showCurrentSlide();
 
+
+
+var plainIcon = L.icon({
+  iconUrl: 'data/marker.jpg',
+  iconSize: [40, 40],
+  iconAnchor: [15, 40],
+  popupAnchor: [0, -40]
+});
+
+map.eachLayer(function(layer) {
+  if( layer instanceof L.Marker ) {
+    layer.setIcon(plainIcon);
+   }
+});
 

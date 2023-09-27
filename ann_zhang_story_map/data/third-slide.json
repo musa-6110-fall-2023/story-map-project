@@ -1,1 +1,175 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Name":"Paradiso","City":"Barcelona"},"geometry":{"coordinates":[2.183692019960887,41.38372395328966],"type":"Point"},"id":0},{"type":"Feature","properties":{"Name":"Tayēr + Elementary","City":"London"},"geometry":{"coordinates":[-0.09139285957130028,51.525078062483544],"type":"Point"}}]}
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "COA",
+          "City": "Hong Kong",
+          "2023 Asian Rank": 1,
+          "Address": "6-10 Shin Hing Street, Central, Hong Kong",
+          "Website": "https://coa.com.hk/"
+        },
+        "geometry": {
+          "coordinates": [
+            114.15209882681415,
+            22.284021196955877
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Jigger & Pony",
+          "City": "Singapore",
+          "2023 Asian Rank": 2,
+          "Address": "165 Tanjong Pagar Road, 088539, Singapore",
+          "Website": "https://www.jiggerandpony.com/"
+        },
+        "geometry": {
+          "coordinates": [
+            103.84347377139227,
+            1.2750780143480114
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "2023 Asian Rank": 3,
+          "Name": "BKK Social Club",
+          "City": "Bangkok",
+          "Address": "300, 1 Charoen Krung Rd, Khwaeng Yan Nawa, Khet Sathon, Bangkok",
+          "Website": "https://www.fourseasons.com/bangkok/dining/lounges/bkk-social-club/?seo=google_local_bpy6_"
+        },
+        "geometry": {
+          "coordinates": [
+            100.51066788570142,
+            13.71174030202458
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "2023 Asian Rank": 4,
+          "Address": "9F, 1 Chome-13-7, Nishishinjuku, Shinjuku City, 160-0023 Tokyo",
+          "Website": "https://www.ameblo.jp/kayama0927",
+          "Name": "Bar Benfiddich",
+          "City": "Tokyo"
+        },
+        "geometry": {
+          "coordinates": [
+            139.696609088802,
+            35.68946650416099
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Zest",
+          "City": "Seoul",
+          "2023 Asian Rank": 5,
+          "Address": "B1 26 KR 55 Dosan-daero 55-gil, Gangnam-gu, Seoul",
+          "Website": "https://www.instagram.com/zest.seoul"
+        },
+        "geometry": {
+          "coordinates": [
+            127.04128029305974,
+            37.52661918024404
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "2023 Asian Rank": 6,
+          "Address": "672/65 Soi Charoen Krung 28, Bang Rak, Bangkok",
+          "Website": "https://www.tropiccitybkk.com/",
+          "Name": "Tropic City",
+          "City": "Bangkok"
+        },
+        "geometry": {
+          "coordinates": [
+            100.5153690171918,
+            13.730723290206285
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Nutmeg & Clove",
+          "City": "Singapore",
+          "2023 Asian Rank": 7,
+          "Address": "8 Purvis St, Singapore",
+          "Website": "https://www.nutmegclove.com/"
+        },
+        "geometry": {
+          "coordinates": [
+            103.85508108438887,
+            1.2966439710953495
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "2023 Asian Rank": 8,
+          "Address": "8 Finance St, Central, Hong Kong",
+          "Website": "https://www.fourseasons.com/zh_hant/hongkong/dining/lounges/argo/",
+          "City": "Hong Kong",
+          "Name": "Argo"
+        },
+        "geometry": {
+          "coordinates": [
+            114.1566480124776,
+            22.286635208336776
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Darkside",
+          "City": "Hong Kong",
+          "2023 Asian Rank": 9,
+          "Address": "Rosewood Hong Kong, Victoria Dockside, 18 Salisbury Road, Tsim Sha Tsui, Hong Kong",
+          "Website": "https://www.darkside.hk/"
+        },
+        "geometry": {
+          "coordinates": [
+            114.17605277382745,
+            22.295104172366962
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "City": "Singapore",
+          "2023 Asian Rank": 10,
+          "Address": "40B Sago St, Singapore",
+          "Website": "https://sagohouse.sg/",
+          "Name": "Sago House"
+        },
+        "geometry": {
+          "coordinates": [
+            103.84377477844498,
+            1.282070519058749
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  }
