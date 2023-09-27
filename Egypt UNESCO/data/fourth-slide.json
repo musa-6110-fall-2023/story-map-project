@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "bounds": [
+    [
+      29.978092, 
+      31.173485
+    ],
+    [
+      30.085306, 
+      31.310151
+    ]
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Historic Cairo",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2611113,
+          30.050000
+        ]
+      }
+    }
+  ]
+}

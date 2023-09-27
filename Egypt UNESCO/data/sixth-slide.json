@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "bounds": [
+    [
+      22.258922, 
+      31.514609
+    ],
+    [
+      22.446103,
+      31.725514
+    ]
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Abu Simbel",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.625158,
+          22.337205
+        ]
+      }
+    }
+  ]
+}

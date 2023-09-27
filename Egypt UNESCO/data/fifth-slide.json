@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "bounds": [
+    [
+      29.940942, 
+      31.100339
+    ],
+    [
+      30.004219, 
+      31.157531
+    ]
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Memphis",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.130693,
+          29.976008
+        ]
+      }
+    }
+  ]
+}

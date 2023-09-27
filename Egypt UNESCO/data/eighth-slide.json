@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "bounds": [
+    [
+      29.224815, 
+      29.982460
+    ],
+    [
+      29.302676, 
+      30.060574
+    ]
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Wadi Al-Hitan",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.184147,
+          29.332532
+        ]
+      }
+    }
+  ]
+}

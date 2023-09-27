@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Egypt</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link 
+      rel="stylesheet" 
+      href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
+  />
+</head>
+<body>
+  <main>
+    <!-- The map container, used by Leaflet -->
+    <div class="map" id="map"></div>
+
+    <!-- The slides container -->
+    <section class="slide-section">
+      <article class="slide" id="title-slide">
+        <h1>World Heritage Sites in Egypt</h1>
+        <p>Egypt, a cradle of ancient civilizations, is home to a plethora of awe-inspiring monuments and landmarks that stand as testaments to its rich history.</p>
+        <p>Recognizing the immense value and significance of these treasures, UNESCO has designated several sites in Egypt as World Heritage Sites.</p>
+        <p>Please follow the map to catch a glimpse of the grandeur and ingenuity of ancient Egyptian civilization.</p>
+      </article>
+
+      <article class="slide" id="second-slide">
+        <h2>Abu Mena</h2>
+        <p>Alexandria Governorate</p>
+        <p>The ruins of the former Christian holy city contain a church, a baptistery, basilicas, public buildings, streets, monasteries, houses, and workshops, and were built over the tomb of Menas of Alexandria.</p>
+        <img src='img/Abu_Mena.jpg' class='floating-window' alt='Abu Mena Image'/>
+      </article>
+
+      <article class="slide" id="third-slide">
+        <h2>Ancient Thebes with its Necropolis</h2>
+        <p>Luxor Governorate</p>
+        <p>The former capital of Egypt and the city of Amun, Thebes contains temples and palaces at Karnak and Luxor, as well as the necropolises at the Valley of the Kings and the Valley of the Queens, bearing witness to the height of the Egyptian civilization.</p>
+        <img src='img/Hatshetsup-temple-1by7.jpg' class='floating-window' alt='Thebes Image'/>
+      </article>
+
+      <article class="slide" id="fourth-slide">
+        <h2>Historic Cairo</h2>
+        <p>Cairo Governorate</p>
+        <p>One of the world's oldest Islamic cities and in the middle of urban Cairo, the site dates from the 10th century and reached its golden age in the 14th century. It contains mosques, madrasah, hammams and fountains.</p>
+        <img src='img/Islamic_Cairo.jpg' class='floating-window' alt='Cairo Image'/>
+      </article>
+
+      <article class="slide" id="fifth-slide">
+        <h2>Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur</h2>
+        <p>Giza Governorate</p>
+        <p>The capital of the Old Kingdom of Egypt has some extraordinary funerary monuments, including rock tombs, ornate mastabas, temples and pyramids. In ancient times, the site was considered one of the Seven Wonders of the World.</p>
+        <img src='img/All_Gizah_Pyramids.jpg' class='floating-window' alt='Giza Image'/>
+      </article>
+      
+      <article class="slide" id="sixth-slide">
+        <h2>Nubian Monuments from Abu Simbel to Philae</h2>
+        <p>Aswan Governorate</p>
+        <p>Located along the Nile, the site contains monuments such as the Temple of Ramesses II at Abu Simbel and the Sanctuary of Isis at Philae, saved from being submerged by Lake Nasser as a result of the construction of the Aswan Dam.</p>
+        <img src='img/Abu_Simbel.jpg' class='floating-window' alt='Abu Simbel Image'/>
+      </article>
+      
+      <article class="slide" id="seventh-slide">
+        <h2>Saint Catherine Area</h2>
+        <p>South Sinai Governorate</p>
+        <p>The orthodox monastery of Saint Catherine is among the oldest Christian monasteries still in function. Dating from the 6th century, it is positioned near Mount Horeb where, according to the Old Testament, Moses received the Tablets of the Law. The region is sacred for Christians, Muslims and Jews.</p>
+        <img src='img/Katharinenkloster_Sinai_BW_2.jpg' class='floating-window' alt='South Sinai Image'/>
+      </article>
+      
+      <article class="slide" id="eighth-slide">
+        <h2>Wadi Al-Hitan (Whale Valley)</h2>
+        <p>Faiyum Governorate</p>
+        <p>Located in western Egypt, Wadi Al-Hitan contains fossil remains of the now extinct Archaeoceti, mapping the evolution of the whales from a land-based to an aquatic mammal.</p>
+        <img src='img/whale.jpg' class='floating-window' alt='Wadi Al-Hitan Image'/>
+      </article>
+
+      <div class="slide-controls">
+        <button class="slide-nav-button" id="prev-slide">⧏</button>
+        <button class="slide-nav-button" id="next-slide">⧐</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>

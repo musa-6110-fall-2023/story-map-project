@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "bounds": [
+    [
+      25.760756, 
+      32.557312   
+    ],
+    [
+      25.678369, 
+      32.660294
+    ]
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Ancient Thebes",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.600953,
+          25.728234
+        ]
+      }
+    }
+  ]
+}

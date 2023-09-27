@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "bounds": [
+    [
+      30.610127,
+      29.383846      
+    ],
+    [
+      31.049256,
+      29.809234
+    ]
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Abu Mena",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.663217,
+          30.840986
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "bounds": [
+    [
+      28.295086, 
+      33.774741
+    ],
+    [
+      28.764975, 
+      34.138581
+    ]
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Saint Catherine",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.975556,
+          28.556111
+        ]
+      }
+    }
+  ]
+}
