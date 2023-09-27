@@ -1,18 +1,3 @@
-/* === These are my slides === */
-/* my thought is to use index to loop through coordinates. in the features? like index 0 = slide 0 */
-
-
-/*const myslides = [slide_0, slide_1, slide_2, slide_3, slide_4,
-  slide_5, slide_6, slide_7, slide_8, slide_9, slide10]
-  
-    slide_temp = {
-    title:'',
-    content: '',
-    coords: ' '
-  }
-  */  
-  
-
 var markerCustom = L.icon({
   iconUrl: 'img/marker8b.png',
   iconSize: [8, 8],
@@ -28,81 +13,13 @@ var plainIcon = L.icon({
 });
   
 
-var cameraIcon = L.icon({
-  iconUrl: 'img/marker5.png',
-  iconSize: [70, 70],
-  iconAnchor: [0, 0],
-  popupAnchor: [35, 5]
-});  
-var nopdIcon = L.icon({
-  iconUrl: 'img/nopd.png',
-  iconSize: [40, 40],
-  iconAnchor: [0, 0],
-  popupAnchor: [-3, -10]
-});
-
-/*
-# Landing page
-We are helping community groups reduce gun crime in Philadelphia by intervening in vacant properties.
-
-# Gun Crime Context
-Philadelphia has a gun violence problem. 
-[chart of gun crime]
-[on map: shootings since the start of 2023, as orange dots]
-
-# Vacancy Context
-Philadelphia has 40,000 vacant properties. These are associated with all kinds of issues.
-[Map vacancy]
-
-# Research Context
-Research shows...
-[Include picture from Dr. South's research]
-[Map PHS land care parcels]
-
-# Desired outcomes
-Content...
-[Map all properties, then have high priority ones show up on click]
-
-# Site 1
-
-    ## Picture
-
-    ## Characteristics
-
-    ## Recommended Actions
-
-# Site 2
-
-    ## Picture
-
-    ## Characteristics
-
-    ## Recommended Actions
-
-# Site 3
-
-    ## Picture
-
-    ## Characteristics
-
-    ## Recommended Actions
-
-# Get involved
-
-If you want to help us build this project, consider joining [our Code for Philly project]. (link)
-Currently, we are looking for developers (React + Next.JS) and data engineers (Python)
-
-
-*/
-
-
 const slide_00 = {
   title:"Clean & Green Philly",
   slide: 'slide_00',
   icon: plainIcon,
   dataUse: 'None',
   autobounds: 'no',
-  img: 'yes',
+  img: 'no',
   content: 'We are helping community groups reduce gun crime in Philadelphia by intervening in vacant properties.',
 };
 
@@ -111,9 +28,15 @@ const slide_0 = {
     slide: 'slide_0',
     dataUse: 'gunCrimes', 
     icon:  plainIcon,
-    autobounds: 'no',
-    img: 'no',
-    content: 'Philadelphia has a gun violence problem. Homicides have been on the rise since 2013. The past three years—2020, 2021, and 2022—have been the deadliest on record, with a high of 562 homicides in 2021. Community members need solutions, but many city-run initiatives are frustratingly slow or inadequate. Nearly 80% of the city’s anti-violence spending focuses on long-term violence reduction without any clear, immediate impact.', 
+    autobounds: 'yes',
+    content: 
+    `
+    Philadelphia has a gun violence problem. Homicides have been on the rise since 2013. 
+    The past three years—2020, 2021, and 2022—have been the deadliest on record, with a high of 562 homicides in 2021. 
+    Community members need solutions, but many city-run initiatives are frustratingly slow or inadequate. 
+    Nearly 80% of the city’s anti-violence spending focuses on long-term violence reduction without any clear, immediate impact. 
+    <img src = "img/annual_guncrimes_plot.png" alt="Gun crimes chart" style="margin-top: 20px; max-width: 100%"/>
+    `
   };
   
 const slide_1 = {
@@ -131,12 +54,22 @@ const slide_2 = {
     dataUse: 'landCareLots', 
     icon: plainIcon,
     autobounds: 'yes',
-    showpopups: 'yes',
-    caption: '<h3> Former Mayor Landrieu (front) and current Mayor Cantrell (to the right of Landrieu) </h3>',
-    img: '<img src = "img/mayors.jpg" height="198px" width="300px" />',
-    content: 'Research shows that greening and cleaning vacant and abandoned parcels is one of the most impactful, cost-effective interventions available to reduce gun violence in a neighborhood. Drs. Eugenia South and Charles Branas have led several studies that demonstrate that greening vacant lots in Philadelphia reduced gun violence by as much as 29% in the surrounding area. Similarly, cleaning and lightly repairing vacant houses led a 13% drop in gun assaults compared to nearby blocks. These “greening and cleaning” interventions not only reduce gun violence but also provide other benefits, such as reducing the urban heat island effect, lowering residents’ stress levels, and contributing to lower levels of depression among residents.',
-  };
+    content: 
+    `
+    <p>
+      Research shows that greening and cleaning vacant and abandoned parcels is one of the most impactful, cost-effective interventions available to reduce gun violence in a neighborhood.
+      <br> <br>
+      Drs. Eugenia South and Charles Branas have led several studies that demonstrate that greening vacant lots in Philadelphia reduced gun violence by as much as 29% in the surrounding area. 
+      Similarly, cleaning and lightly repairing vacant houses led a 13% drop in gun assaults compared to nearby blocks. These “greening and cleaning” interventions not only reduce gun violence but also provide other benefits, 
+      such as reducing the urban heat island effect, lowering residents’ stress levels, and contributing to lower levels of depression among residents.
+      <br> <br>
+      <img src="img/main_article_summary.png" alt="Article abstract" style="margin-top: 20px; max-width: 100%" />
+    </p>
+    `
+   };
 
+
+// have high-priority sites show up on click  
 const slide_3 = {
     title: 'How Clean & Green Philly Helps',
     slide: 'slide_3',
@@ -144,51 +77,83 @@ const slide_3 = {
     autobounds: 'yes',
     dataUse: 'None',
     showpopups: 'yes',
-    content: 'There are roughly 40,000 vaccant properties in Philadelphia. Identifying the highest-priority vacant properties will allow community groups to invest their limited resources where they will have the biggest impact. Combining various public data, this dashboard helps users identify the properties that are ideal for them to intervene in. It also offers additional information about each property to facilitate interventions and indicates the best possible route to cleaning up the property.'
-};
+    content:
+    `
+    <p>
+      By identifying the highest-priority vacant properties, this project will allow community groups to invest their limited resources where they will have the biggest impact.
+      <br> <br>
+      We combine public data on gun crime, vacancy, and other information in order to identify high, medium, and low priority properties.
+      We also incorporate information on property ownership to help stakeholders identify the best way to intervene.
+      <img src="img/main_article_summary.png" alt="Article abstract" style="margin-top: 20px; max-width: 100%" />
+    </p>
+    `
+  };
 
-const slide_4 = {
-    title: 'Site 1',
+  const slide_4 = {
+    title: 'Case Study #1',
     slide: 'slide_4',
     dataUse: 'None',
-    autobounds: 'no',
-    showpopups: 'yes', 
+    autobounds: 'yes',
+    showpopups: 'yes',
     img: 'yes',
     showimg: 'yes',
     icon: plainIcon,
-    content: '<p>The use of facial recognition tech in the New Orleans Police Department was a surprise for many. Outrage and concern led to Eye on Surveillance’s proposed ban being adopted at the end of the year. Though the ordinance was successfully passed, a new ordinance was recently introduced that would undo the bans and gains made by Eye on Surveillance and the previous City Council. The ordinance to reverse the bans is supported by both the Mayor and police superintendent, Shaun Ferguson. </p><p>Now, EOS and others are continuing the fight against harmful surveillance, for the reasons stated in their press release:</p><p style= font-style: italic;>“In December 2020, New Orleans City Council banned the use of facial recognition and three other surveillance technologies, in large part because they have been proven rife with racial bias and have resulted in the wrongful arrest and imprisonment of people of color across the country. They also continue to distract from addressing the root causes of crime; these tools don’t prevent crime, yet we continue to pour money into them instead of affordable housing, job training, nutritious food options, and better schools.” <a href= “https://eye-on-surveillance.webflow.io//blog/surveillance-ordinance-amendment-response”> Eye on Surveillance Press Release Feb. 3 2022 </a></p> '
+    content: 
+    `
+      <p style="font-size: 1em; font-weight: bold; margin-bottom: 10px;">1844 W Sedgley Avenue</p>
+      <p>This parcel at 1844 W SEDGLEY AVE is privately owned by TEMPLETOWN SEDGLEY LLC; 3045 WEST JEFF LP. It is a building worth $627500.0. The gun crime rate at this site is in the top 5% citywide, and it is in the top 10% for tree canopy coverage, which makes it a high priority site for intervention.</p>
+      <p style="font-size: 0.8em; font-style: italic;">Photo: Street view of 1844 W Sedgley Avenue. Nov. 22, 2022.</p>
+      <p style="font-size: 0.8em; font-style: italic;">Credit: cyclomedia.phila.gov</p>
+    `
   };
   
+  
 const slide_5 = {
-    title: 'Site 2',
+    title: 'Case Study #2',
     slide: 'slide_5',
     dataUse: 'None',
-    autobounds: 'no',
+    autobounds: 'yes',
     showpopups: 'yes', 
     img: 'yes',
     showimg: 'yes',
     icon: plainIcon,
-    content: '<p>The use of facial recognition tech in the New Orleans Police Department was a surprise for many. Outrage and concern led to Eye on Surveillance’s proposed ban being adopted at the end of the year. Though the ordinance was successfully passed, a new ordinance was recently introduced that would undo the bans and gains made by Eye on Surveillance and the previous City Council. The ordinance to reverse the bans is supported by both the Mayor and police superintendent, Shaun Ferguson. </p><p>Now, EOS and others are continuing the fight against harmful surveillance, for the reasons stated in their press release:</p><p style= font-style: italic;>“In December 2020, New Orleans City Council banned the use of facial recognition and three other surveillance technologies, in large part because they have been proven rife with racial bias and have resulted in the wrongful arrest and imprisonment of people of color across the country. They also continue to distract from addressing the root causes of crime; these tools don’t prevent crime, yet we continue to pour money into them instead of affordable housing, job training, nutritious food options, and better schools.” <a href= “https://eye-on-surveillance.webflow.io//blog/surveillance-ordinance-amendment-response”> Eye on Surveillance Press Release Feb. 3 2022 </a></p> '
+    content: 
+    `
+      <p style="font-size: 1em; font-weight: bold; margin-bottom: 10px;">2426 N. 13th Street</p>
+      <p>This parcel at 2141 N 19TH ST is owned by the City of Philadelphia. It is a lot worth $51700.0, but you should be able to receive a deed from the City for $1. 
+      To do so, you will need to contact the Councilmember from District 5 and also the relevant RCO, which is Temple Area Property Association (TAPA); 1639 N. Hancock Street, Suite 307 Philadelphia Philadelphia, PA 19122 United States; peter.redpike@gmail.com; 2158963863. 
+      The gun crime rate at this site is in the top 10% citywide, and it is in the top 50% for tree canopy coverage, which makes it a high priority site for intervention.</p>
+      <p style="font-size: 0.8em; font-style: italic;">Photo: Street view of 2141 N. 19th Street, Jan. 21, 2023.</p>
+      <p style="font-size: 0.8em; font-style: italic;">Credit: cyclomedia.phila.gov</p>
+    `
   };
   
   const slide_6 = {
-    title: 'Site 3',
+    title: 'Case Study #3',
     slide: 'slide_6',
-    icon: markerCustom,
+    dataUse: 'None',
+    autobounds: 'yes',
+    showpopups: 'yes', 
     img: 'yes',
-    dataUse: 'None',
-    autobounds: 'no', 
-    content: '<p>Looking just at affordable housing, what are the state of things?</p><p>The state of affordable housing for Homeowners is not as bad as it is for renters. Shown here is a map highlighting an estimate of the percentage of homeowners with debt that spend half or more of their income on housing by block group.</p><table class="cuteTable"><tr><th>% Income Spent on Homeownership</th><th>Number of Block Groups Is Majority</th><th>% of Block Groups is Majority</th></tr><tr><td>50% or More</td><td>131</td><td>26.4%</td></tr><tr><td>40 to 49%</td><td>27</td><td>5.4%</td></tr><tr><td>35 to 39%</td><td>19</td><td>3.8%</td></tr><tr><td>30 to 34%</td><td>24</td><td>4.8%</td></tr><tr><td>25 to 29%</td><td>38</td><td>7.6%</td></tr><tr><td>20 to 24%</td><td>49</td><td>9.9%</td></tr><tr><td>15 to 19%</td><td>74</td><td>14.9%</td></tr><tr><td>10 to 15%</td><td>63</td><td>12.7%</td></tr><tr><td>Less than 10%</td><td>44</td><td>8.9%</td></tr><tr><td>Not Computed</td><td>44</td><td>8.9%</td></tr></table>Source: US Census (5YR ACS)',
-  };
-  const slide_7 = {
-    title: 'Get Involved',
-    slide: 'slide_6',
-    icon: markerCustom,
-    dataUse: 'None',
-    autobounds: 'no', 
-    content: '<p>Looking just at affordable housing, what are the state of things?</p><p>The state of affordable housing for Homeowners is not as bad as it is for renters. Shown here is a map highlighting an estimate of the percentage of homeowners with debt that spend half or more of their income on housing by block group.</p><table class="cuteTable"><tr><th>% Income Spent on Homeownership</th><th>Number of Block Groups Is Majority</th><th>% of Block Groups is Majority</th></tr><tr><td>50% or More</td><td>131</td><td>26.4%</td></tr><tr><td>40 to 49%</td><td>27</td><td>5.4%</td></tr><tr><td>35 to 39%</td><td>19</td><td>3.8%</td></tr><tr><td>30 to 34%</td><td>24</td><td>4.8%</td></tr><tr><td>25 to 29%</td><td>38</td><td>7.6%</td></tr><tr><td>20 to 24%</td><td>49</td><td>9.9%</td></tr><tr><td>15 to 19%</td><td>74</td><td>14.9%</td></tr><tr><td>10 to 15%</td><td>63</td><td>12.7%</td></tr><tr><td>Less than 10%</td><td>44</td><td>8.9%</td></tr><tr><td>Not Computed</td><td>44</td><td>8.9%</td></tr></table>Source: US Census (5YR ACS)',
-  };
+    showimg: 'yes',
+    icon: plainIcon,
+    content: `
+    <p style="font-size: 1em; font-weight: bold; margin-bottom: 10px;">2141 N. 19th Street</p>
+    <p>This parcel at 2426 N 13TH ST is privately owned by RFUND INVESTMENTS LLC. It is a lot worth $38000.0. The gun crime rate at this site is in the top 25% citywide, and it is in the bottom 50% for tree canopy coverage, which makes it a high priority site for intervention.</p>
+    <p style="font-size: 0.8em; font-style: italic;">Photo: Street view of 2141 N. 19th Street, Nov. 22, 2022.</p>
+    <p style="font-size: 0.8em; font-style: italic;">Credit: cyclomedia.phila.gov</p>
+  `
+ };
+
+/*
 
 
+# Get involved
 
-const slides = [slide_00, slide_0, slide_1, slide_2, slide_3, slide_4, slide_5, slide_6, slide_7]
+If you want to help us build this project, consider joining [our Code for Philly project]. (link)
+Currently, we are looking for developers (React + Next.JS) and data engineers (Python)
+
+
+*/
+
+const slides = [slide_00, slide_0, slide_1, slide_2, slide_3, slide_4, slide_5, slide_6]

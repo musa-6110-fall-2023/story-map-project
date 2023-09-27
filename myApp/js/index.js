@@ -16,19 +16,6 @@ var overlayMaps = {
 
 L.control.layers(overlayMaps).addTo(map);
 
-/*var control = L.control.layers(overlayMaps)
-control.addTo(map);*/
-
-/* === This is my Data === */
-/*
-const SchoolCensus = 'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/SchoolCensus.geojson'
-const rtcc = 'https://opendata.arcgis.com/datasets/f7ed68293c5e40d58f1de9c8435c3e84_0.geojson'
-const demo = 'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/census/DemoCamera_BG4326.geojson'
-const rent = 'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/census/RentCamera_BG4326.geojson'
-const schoolData =  'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/schoolonly/SchoolData_geo3452.geojson'
-const mort = 'https://raw.githubusercontent.com/bri-ne/JSstorymap/main/Data/census/mortCamera_BG4326.geojson'
-*/
-
 const gunCrimes = 'https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+shootings&filename=shootings&format=geojson&skipfields=cartodb_id'
 const vacancy = 'https://opendata.arcgis.com/datasets/f7ed68293c5e40d58f1de9c8435c3e84_0.geojson'
 const landCareLots = 'https://opendata.arcgis.com/datasets/370e90f4f3044170a85f098facb9684c_0.geojson' 
@@ -83,7 +70,6 @@ function initialSlide() {
     map.flyToBounds(layer.getBounds());
   }
   return layer
-  /*map.flyToBounds(layer.getBounds())*/
 };
 
 function showCurrentSlide() {
@@ -106,10 +92,12 @@ function showCurrentSlide() {
   if (slideNOW.showimg) {
     layer.eachLayer(l => {
       l.bindPopup(l => l.feature.properties.img, {
-        maxWidth : 560} ) 
+        maxWidth : 560
+      });
       l.openPopup();
     });
-  }; 
+  };
+  
 };
 
 
@@ -170,30 +158,6 @@ function updateMap(mapToShow, slide) {
     });
   }  
 
-  if (slide.dataUse === "mortData") {
-    fetch(mort)
-    .then(resp => resp.json())
-    .then(data => { 
-      L.geoJSON(data, {style: styleMort,  
-        onEachFeature: onEachFeatureMort
-      }).addTo(layerGroup)
-      });
-
-    fetch(rtcc)
-    .then(resp => resp.json())
-    .then(data => {
-      L.geoJSON(data, {onEachFeature: function(feature) {
-        var marker = L.marker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]],
-          {icon: iconuse});
-          secondlayerGroup.addLayer(marker);
-        }});
-      }); 
-
-      
-    const geoJsonLayer =  layerGroup;
-    return geoJsonLayer;
-  }  
-
   if (slide.dataUse === "landCareLots") {
     fetch(landCareLots)
     .then(resp => resp.json())
@@ -217,44 +181,8 @@ function updateMap(mapToShow, slide) {
       });
     });
   }  
-/*
-  if (slide.dataUse === "demoData") {
-    fetch(demo)
-    .then(resp => resp.json())
-    .then(data => { 
-      L.geoJSON(data, {style: styleDemo,  
-        onEachFeature: onEachFeatureDemo
-      }).addTo(layerGroup)
-      });
-    
-    const geoJsonLayer =  layerGroup;
-    return geoJsonLayer;
-    
-  }
-  
-  if (slide.dataUse === "rentData") {
-    fetch(rent)
-    .then(resp => resp.json())
-    .then(data => { 
-      L.geoJSON(data, {style: styleRent,  
-        onEachFeature: onEachFeatureRent
-      }).addTo(layerGroup)
-      });
 
-    fetch(rtcc)
-    .then(resp => resp.json())
-    .then(data => {
-      var markersClust = new L.MarkerClusterGroup();
-      L.geoJSON(data, {onEachFeature: function(feature) {
-        var marker = L.marker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]],
-          {icon: iconuse});
-          secondlayerGroup.addLayer(marker);
-        }});
-      });
-    const geoJsonLayer =  layerGroup;  
-    return geoJsonLayer;
-
-  } */ else {
+  else {
     if (slide.icon && slide.img) {
       const geoJsonLayer = L.geoJSON(mapToShow, { pointToLayer: (p, latlng) => L.marker(latlng, 
         {icon: iconuse}) })
@@ -311,18 +239,55 @@ function getCaption(slide) {
   return caption;
 }
 
+let clickedPastFinalSlide = false;
+
+// Variables for Popup and Overlay
+var overlay = document.getElementById("overlay");
+var popup = document.getElementById("popup");
+var closePopupButton = document.getElementById("popupclose");
+
+// Function to Show Popup
+function showPopup(content) {
+  overlay.style.display = 'block';
+  popup.style.display = 'block';
+  popup.innerHTML = content;
+}
+
+// Function to Close Popup
+function closePopup() {
+  overlay.style.display = 'none';
+  popup.style.display = 'none';
+}
+
+// Assign the Close Popup Function to the Close Button
+closePopupButton.onclick = closePopup;
+
+// Assuming you have a next button with id 'next-slide'
+var nextButton = document.getElementById("next-slide");
+
 function nextSlide() {
+  // Increment the current slide index.
   currentSlideIndex++;
 
+  // If it is after the last slide, show the final popup.
   if (currentSlideIndex === slides.length) {
-    currentSlideIndex = 0;
+    const finalPopupContent = `
+    <div id="popupclose" onclick="closePopup()">X</div>
+    <p>Get Involved Content Here!</p>
+    <button id="startOverButton" class="slide-butt" onclick="location.reload()">Start Over</button>`;
+    showPopup(finalPopupContent);
+    nextButton.disabled = true; // Disable the next button
+    nextButton.style.opacity = 0.5; // Fade out the next button
+  } else {
+    map.removeControl(legend);
+    map.removeControl(legend2);
+    showCurrentSlide();
+    nextButton.disabled = false; // Enable the next button
+    nextButton.style.opacity = 1; // Make the next button fully visible
   }
-  map.removeControl(legend);
-  map.removeControl(legend2);
-  showCurrentSlide();
-};
+}
 
-function prevSlide(){
+function prevSlide() {
   currentSlideIndex--;
 
   if (currentSlideIndex < 0) {
@@ -333,15 +298,33 @@ function prevSlide(){
   showCurrentSlide();
 }
 
+window.onload = function() {
+  // Initially set display to none for overlay and popup.
+  overlay.style.display = 'none';
+  popup.style.display = 'none';
+
+  // Content for the initial popup
+  const initialPopupContent = `
+    <div id="popupclose" onclick="closePopup()">X</div>
+    <div class="popupcontent">
+      <h1 style="padding-top: 3rem; padding-left: 3rem;">How We're Helping</h1>
+      <p style="padding-left: 3rem; padding-right: 3rem">
+        We're helping fight gun violence in Philadelphia by empowering community groups to take action where it will have the most impact.
+        <br> <br>
+        Based on research by Dr. Eugenia South, this project uses public data to help residents identify and intervene in vacant properties
+        with the highest rates of gun crime.
+        <br> <br>
+        (Disclaimer: This project is an adaptation of <a href="https://github.com/CodeForPhilly/vacant-lots-proj">Clean & Green Philly</a>, an ongoing civic tech project led by Nissim Lebovits.
+        The work shown here, however, is for a class project and does not accurately reflect real data or the current state of Clean & Green Philly.)</p>`;
+  
+  // Show the initial popup.
+  showPopup(initialPopupContent);
+};
 
 slidePrevButton.addEventListener('click', prevSlide);
 slideNextButton.addEventListener('click', nextSlide);
 
-
-
 getData(initialSlide);
 console.log("data in");
-
-console.log('istherestuffonthemap')
-
+console.log('is there stuff on the map');
 
