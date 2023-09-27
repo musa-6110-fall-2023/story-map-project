@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "bounds": [
+      [
+        -75,
+        -180
+      ],
+      [
+        75,
+        180
+      ]
+    ],
+    "features": [
+      {
+      "type": "Feature",
+      "properties": {
+        "label": "Bogotá, Columbia",
+        "era": "inat",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08175,
+          4.60971
+        ]
+      }
+    }
+  ]
+}
