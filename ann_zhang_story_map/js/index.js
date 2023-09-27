@@ -1,3 +1,7 @@
+
+import * as csv from 'https://www.unpkg.com/csv-parse@5.5.0/dist/esm/sync.js';
+
+
 import { SlideDeck } from './slidedeck.js';
 
 const map = L.map('map').setView([0, 0], 0);
