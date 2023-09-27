@@ -27,9 +27,18 @@ class SlideDeck {
   * @return {L.GeoJSONLayer} The new GeoJSON layer that has been added to the
   *                          data layer group.
   */
+  
   updateDataLayer(data) {
+
+    var plainIcon = L.icon({
+      iconUrl: "img/marker.jpg",
+      iconSize: [40, 40],
+      iconAnchor: [15, 40],
+      popupAnchor: [0, -40]
+    });
+
     this.dataLayer.clearLayers();
-    const geoJsonLayer = L.geoJSON(data, { pointToLayer: (p, latlng) => L.marker(latlng) })
+    const geoJsonLayer = L.geoJSON(data, { pointToLayer: (p, latlng) => L.marker(latlng,{icon:plainIcon,alt:"bar"})})
         .bindTooltip((l) => l.feature.properties.label)
         .addTo(this.dataLayer);
 

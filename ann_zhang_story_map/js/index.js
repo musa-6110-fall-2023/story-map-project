@@ -26,16 +26,5 @@ deck.showCurrentSlide();
 
 
 
-var plainIcon = L.icon({
-  iconUrl: 'data/marker.jpg',
-  iconSize: [40, 40],
-  iconAnchor: [15, 40],
-  popupAnchor: [0, -40]
-});
 
-map.eachLayer(function(layer) {
-  if( layer instanceof L.Marker ) {
-    layer.setIcon(plainIcon);
-   }
-});
 
