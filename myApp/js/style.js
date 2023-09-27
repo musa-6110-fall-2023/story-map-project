@@ -1,7 +1,4 @@
 
-    
-
-
 /* Map color Functions*/
 function getColor(d) {
   return d > 99 ? '#f0f921' :
@@ -18,8 +15,6 @@ function getColor(d) {
   }
 
 /* Legend Function */
-
-
 function getLegendTitle () {
   let titlehere = LegendTitle;
   return titlehere

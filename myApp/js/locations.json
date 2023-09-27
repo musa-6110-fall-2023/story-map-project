@@ -19,7 +19,7 @@
     {
       "type": "Feature",
       "properties": {
-        "slide": "slide_0",
+        "slide": "slide_4",
         "label": "1844 W Sedley Ave",
         "img": "<h3> Street view of 1844 W Sedgley Avenue, Nov. 22, 2022.</h3><p>credit: Cyclomedia.phila.gov</p> <img src = 'img/1844_w_sedgley.png' height='314px' width='560px' />"
       },
@@ -35,36 +35,22 @@
     {
       "type": "Feature",
       "properties": {
-        "slide": "slide_2",
-        "label": "Mayor's Office",
-        "img": "<h3> Former Mayor Landrieu (front) and current Mayor Cantrell (to the right of Landrieu) at the RTCC.</h3> <img src = 'img/mayors.jpg' height='369px' width='560px' />"
+        "slide": "slide_5",
+        "label": "FBI",
+        "img":" <h3> Street view of 2426 N. 13th Street, Jan. 21, 2023.</h3><p>credit: Cyclomedia.phila.gov</p> <img src = 'img/2426_n_13th.png' height='314px' width='560px' />"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -75.163744,
-          39.952405
+          -75.153432,
+          39.989666 
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "slide": "slide_2",
-        "label": "FBI"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -75.163744,
-          39.952405
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "slide": "slide_2",
+        "slide": "slide_6",
         "label": "NOPD"
       },
       "geometry": {
@@ -116,36 +102,7 @@
           39.952405
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "slide": "slide_4",
-        "label": "Eye on Surveillance",
-        "img": "<h3> Eye on Surveillance Organizers.</h3><p>credit: Eye on Surveillance</p> <img src = 'img/eos.jpg' height='445px' width='560px' />"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -75.163744,
-          39.952405
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "slide": "slide_4",
-        "label": "NOPD",
-        "img": "<h3> Mayor Cantrell (left) and NOPD Superintendent Shaun Ferguson(right).</h3><p>credit: The Advocate</p> <img src = 'img/ferguson.png' height='314px' width='560px' />"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -75.163744,
-          39.952405
-        ]
-      }
+
     }
   ]
 }

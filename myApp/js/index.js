@@ -1,16 +1,21 @@
 let map = L.map('map').setView([39.952405, -75.163744], 13);
+
 const cartopositron = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png'
+
 L.tileLayer(cartopositron, {
   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
 }).addTo(map);
+
 let layerGroup = L.layerGroup().addTo(map)
+
 let secondlayerGroup = L.layerGroup()
 
 var overlayMaps = {
-  "Cameras": secondlayerGroup
+  "Gun Crimes": secondlayerGroup
 };
 
 L.control.layers(overlayMaps).addTo(map);
+
 /*var control = L.control.layers(overlayMaps)
 control.addTo(map);*/
 
@@ -120,56 +125,29 @@ function updateMap(mapToShow, slide) {
   layerGroup.clearLayers();
   iconuse = slide.icon;
 
-  if (slide.dataUse === "cameraData") {
-    fetch(rtcc)
-    .then(resp => resp.json())
-    .then(data => {
-      L.geoJSON(data, {
-        onEachFeature: function(feature, layer) {
-          if (feature.geometry.type === "Polygon") {
-            // Style or modify the polygon layer as needed.
-            layer.setStyle({
-              color: '#ff7800',   // Change to the desired stroke color.
-              weight: 2,          // Change to the desired stroke weight.
-              opacity: 0.35       // Change to the desired opacity.
-            });
-  
-            // If you wish to bind popup or do other interactions, you can add here.
-            // Example: layer.bindPopup('This is a polygon!');
-  
-            layerGroup.addLayer(layer);
-          }
-        }
-      });
-    });
-  }  
-
   if (slide.dataUse === "gunCrimes") {
-    fetch(mort)
-    .then(resp => resp.json())
-    .then(data => { 
-      L.geoJSON(data, {style: styleMort,  
-        onEachFeature: onEachFeatureMort
-      }).addTo(layerGroup)
+    fetch(gunCrimes)
+      .then(resp => resp.json())
+      .then(data => {
+        L.geoJSON(data, {
+          pointToLayer: function (feature, latlng) {
+            // Customize the marker for each point feature
+            return L.marker(latlng, {
+              icon: L.divIcon({ className: 'custom-icon' }),
+              // Add other options like icon size, color, etc.
+            });
+          },
+          onEachFeature: function (feature, layer) {
+            // Add interactions, popups, etc. for each point feature
+            layer.bindPopup('This is a point!');
+          }
+        }).addTo(layerGroup); // Add the geoJSON layer to your layerGroup
       });
-
-    fetch(rtcc)
-    .then(resp => resp.json())
-    .then(data => {
-      L.geoJSON(data, {onEachFeature: function(feature) {
-        var marker = L.marker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]],
-          {icon: iconuse});
-          secondlayerGroup.addLayer(marker);
-        }});
-      }); 
-
-      
-    const geoJsonLayer =  layerGroup;
-    return geoJsonLayer;
-  }  
+  }
+  
 
   if (slide.dataUse === "vacancy") {
-    fetch(rtcc)
+    fetch(vacancy)
     .then(resp => resp.json())
     .then(data => {
       L.geoJSON(data, {
@@ -217,7 +195,7 @@ function updateMap(mapToShow, slide) {
   }  
 
   if (slide.dataUse === "landCareLots") {
-    fetch(rtcc)
+    fetch(landCareLots)
     .then(resp => resp.json())
     .then(data => {
       L.geoJSON(data, {
