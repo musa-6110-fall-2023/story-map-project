@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "bounds": [
+    [
+      20,
+      22
+    ],
+    [
+      34,
+      34
+    ]
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Abu Mena",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.663217,
+          30.840986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Ancient Thebes",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.600953,
+          25.728234
+        ]
+      }
+    },    
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Historic Cairo",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2611113,
+          30.050000
+        ]
+      }
+    },    
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Memphis",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.130693,
+          29.976008
+        ]
+      }
+    },    
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Abu Simbel",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.625158,
+          22.337205
+        ]
+      }
+    },    
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Saint Catherine",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.975556,
+          28.556111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Wadi Al-Hitan",
+        "era": "stepwise",
+        "type": "point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.184147,
+          29.332532
+        ]
+      }
+    }
+  ]
+}
