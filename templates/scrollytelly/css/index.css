@@ -53,14 +53,14 @@ body {
 }
 
 #title{
-  color: #ffffff;
+  color: #7ecb9d;
   font-family: 'Rockwell', serif;
   font-size: 60px;
   text-align: center;
 }
 
 #sub-title{
-  color: #ccddee;
+  color: #8eb0d2;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   text-align: center;
@@ -132,6 +132,11 @@ body {
 
 .slide:first-child {
   margin-top: 0;
+}
+
+#append{
+  width: 25rem;
+  align-items: center;
 }
 
 .slide:last-child {
