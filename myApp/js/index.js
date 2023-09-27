@@ -273,7 +273,12 @@ function nextSlide() {
   if (currentSlideIndex === slides.length) {
     const finalPopupContent = `
     <div id="popupclose" onclick="closePopup()">X</div>
-    <p>Get Involved Content Here!</p>
+    <div class="popupcontent">
+      <h1 style="padding-top: 3rem; padding-left: 3rem;">Get Involved</h1>
+      <p style="padding-left: 3rem; padding-right: 3rem">
+      Interested in helping us fight gun crime in Philadelphia? We're looking for help with web development, user testing, policy knowledge, 
+      funding, and more. Contact <a href="mailto:nissim@design.upenn.edu">Nissim Lebovits</a> or visit <a href="https://github.com/CodeForPhilly/vacant-lots-proj">our Clean & Green Philly GitHub repository</a>.
+      </p>
     <button id="startOverButton" class="slide-butt" onclick="location.reload()">Start Over</button>`;
     showPopup(finalPopupContent);
     nextButton.disabled = true; // Disable the next button

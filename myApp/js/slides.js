@@ -84,7 +84,6 @@ const slide_3 = {
       <br> <br>
       We combine public data on gun crime, vacancy, and other information in order to identify high, medium, and low priority properties.
       We also incorporate information on property ownership to help stakeholders identify the best way to intervene.
-      <img src="img/main_article_summary.png" alt="Article abstract" style="margin-top: 20px; max-width: 100%" />
     </p>
     `
   };
@@ -144,16 +143,5 @@ const slide_5 = {
     <p style="font-size: 0.8em; font-style: italic;">Credit: cyclomedia.phila.gov</p>
   `
  };
-
-/*
-
-
-# Get involved
-
-If you want to help us build this project, consider joining [our Code for Philly project]. (link)
-Currently, we are looking for developers (React + Next.JS) and data engineers (Python)
-
-
-*/
 
 const slides = [slide_00, slide_0, slide_1, slide_2, slide_3, slide_4, slide_5, slide_6]
