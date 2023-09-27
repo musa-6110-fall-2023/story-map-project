@@ -1,0 +1,94 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "slide": "slide_4",
+        "label": "1844 W Sedgley",
+        "img": "<img src = 'img/1844_w_sedgley.png' height='314px' width='560px' />"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.159950,
+          39.995810
+          
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "slide": "slide_5",
+        "label": "2426 N 13th",
+        "img": "<img src = 'img/2426_n_13th.png' height='314px' width='560px' />"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.153432,
+          39.989666 
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "slide": "slide_6",
+        "label": "2141 N 19th",
+        "img": "<img src = 'img/2141_n_19th.png' height='314px' width='560px' />"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.163989,
+          39.986742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "slide": "slide_3",
+        "label": "LA SAFE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.163744,
+          39.952405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "slide": "slide_3",
+        "label": "NOPD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.163744,
+          39.952405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "slide": "slide_3",
+        "label": "FBI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.163744,
+          39.952405
+        ]
+      }
+
+    }
+  ]
+}

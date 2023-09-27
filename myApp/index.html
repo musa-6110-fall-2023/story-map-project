@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vacant Properties Dashboard</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+
+  <!-- Heading or Title Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+  <!-- Paragraph Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <div class="top-bar">
+    <h1>Clean & Green Philly</h1>
+    <p class="small-text">Find vacant properties to clean and green <br> in order to reduce gun violence.</p>
+  </div>
+
+  <div class="all-content">
+
+    <div id="map" class="map">map</div>
+
+    <div class="slide-side">
+      <div class="slide-title" style="margin-left: 1rem;"></div>
+      <div class="slide-content"></div>
+      <div class="slide-controls">
+        <button class="slide-butt" id="prev-slide"><div class="button-text">&#x2b05;</div></button>
+        <button class="slide-butt" id="next-slide"><div class="button-text">&#x2b95;</div></button>
+      </div>
+    </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="popup">
+      <div>
+        <span id="popupclose">X</span>
+      </div>
+      <div class="popupcontent">
+          <h1 style="padding-top: 3rem; padding-left: 3rem;">How We're Helping</h1>
+          <p style="padding-left: 3rem; padding-right: 3rem">
+            We're helping fight gun violence in Philadelphia by empowering community groups to take action where it will have the most impact.
+            <br> <br>
+            Based on research by Dr. Eugenia South, this project uses public data to help residents identify and intervene in vacant properties
+            with the highest rates of gun crime.
+            <br> <br>
+            (Disclaimer: This project is an adaptation of <a href="https://github.com/CodeForPhilly/vacant-lots-proj">Clean & Green Philly</a>, an ongoing civic tech project led by Nissim Lebovits.
+            The work shown here, however, is for a class project and does not accurately reflect real data or the current state of Clean & Green Philly.)</p>
+      </div>
+  </div>
+
+
+  <script src="https://unpkg.com/showdown@1.9.0/dist/showdown.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+  <script async src="//www.instagram.com/embed.js"></script>
+  <script src="js/slides.js"></script>
+  <script src="js/style.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
