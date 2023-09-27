@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  height: 100vh;
+
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: rgb(250, 215, 174);
+  background-color: rgb(4, 28, 22, 0.95);
+}
+
+.intro-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 5em;
+}
+
+.intro-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1.5em;
+  line-height: 1.5;
+  width: 70%;
+}
+
+.intro-img{
+  margin-top: auto;
+  margin-bottom: auto;
+  opacity: 50%;
+  height: 200vh;
+  width: 100%;
+}
+
+.intro-subtitle {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: 1em;
+}
+
+.map-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 0;
+}
+
+.map {
+  height: 100%;
+}
+
+.slide-section {
+  position: relative;
+  margin-top: -30vh;
+  z-index: 100;
+  pointer-events: none;
+}
+
+h1{
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 24px;
+}
+
+p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.illustration{
+  width:100%;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  border-radius: 0.2rem;
+}
+
+.reference{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 100%;
+}
+
+.slide {
+  margin-top: 90vh;
+  margin-bottom: 90vh;
+  margin-left: auto;
+  margin-right: 2rem;
+  padding: 1.5rem;
+  box-shadow: -0.5rem 0 1rem rgba(0 0 0 / 30%);
+  border: 0px solid rgb(168, 168, 168);
+  border-radius: 0.2rem;
+  backdrop-filter: blur(5px);
+  pointer-events: initial;
+
+  width: 25rem;
+
+  background-color: hsla(163, 64%, 8%, 0.8);
+  color: rgb(250, 215, 174);
+}
+
+
+
+.slide:first-child {
+  margin-top: 0;
+}
+
+.slide:last-child {
+  margin-bottom: 80vh;
+}
+
+.slide-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 0.5rem;
+
+  width: 100%;
+}
+
+.slide-nav-button {
+  transition: all 0.1s;
+
+  padding: 0;
+  margin: 1rem;
+  width: 4rem;
+  height: 3rem;
+  border: 1px solid #888;
+  border-radius: 0.25rem;
+
+  background-color: #eee;
+  font-size: 1.5em;
+}
+
+.slide-nav-button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.slide-nav-select {
+  min-width: 0;
+}
+
+.ending{
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: rgb(250, 215, 174);
+  border: 0px;
+  background-color: rgb(4, 28, 22, 0.6);
+}
+
+.endTitle{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 24px;
+}
+
+.frame{
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0px;
+  box-shadow: -0.5rem 0 1rem rgba(0 0 0 / 30%);
+  opacity: 80%;
+}

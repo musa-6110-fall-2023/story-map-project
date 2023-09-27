@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Egypt"
+      },
+      "geometry": {
+        "coordinates": [
+          29.88817685368585,
+          26.4731072774981
+        ],
+        "type": "Point"
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Turkey"
+      },
+      "geometry": {
+        "coordinates": [
+          35.17747620909307,
+          39.07611545220229
+        ],
+        "type": "Point"
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Syria"
+      },
+      "geometry": {
+        "coordinates": [
+          38.4969401937789,
+          35.01233674050535
+        ],
+        "type": "Point"
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Persia"
+      },
+      "geometry": {
+        "coordinates": [
+          54.290330011663116,
+          32.598710704232715
+        ],
+        "type": "Point"
+      },
+      "id": 3
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Yemen"
+      },
+      "geometry": {
+        "coordinates": [
+          47.62758152095202,
+          15.941540558425373
+        ],
+        "type": "Point"
+      },
+      "id": 4
+    }
+  ]
+}

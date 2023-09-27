@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "<b>Ethiopia</b>",
+        "year": "850"
+      },
+      "geometry": {
+        "coordinates": [
+          39.68162168754256,
+          8.613331540674821
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "country": "Yemen",
+        "year": "850"
+      },
+      "geometry": {
+        "coordinates": [
+          47.615375212742265,
+          15.976380211237014
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

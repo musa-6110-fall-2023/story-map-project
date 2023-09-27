@@ -1,0 +1,327 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "egypt"
+        },
+        "geometry": {
+          "coordinates": [
+            29.88817685368585,
+            26.4731072774981
+          ],
+          "type": "Point"
+        },
+        "id": 0
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "turkey"
+        },
+        "geometry": {
+          "coordinates": [
+            35.17747620909307,
+            39.07611545220229
+          ],
+          "type": "Point"
+        },
+        "id": 1
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "syria"
+        },
+        "geometry": {
+          "coordinates": [
+            38.4969401937789,
+            35.01233674050535
+          ],
+          "type": "Point"
+        },
+        "id": 2
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "persia"
+        },
+        "geometry": {
+          "coordinates": [
+            54.290330011663116,
+            32.598710704232715
+          ],
+          "type": "Point"
+        },
+        "id": 3
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "yemen"
+        },
+        "geometry": {
+          "coordinates": [
+            47.62758152095202,
+            15.941540558425373
+          ],
+          "type": "Point"
+        },
+        "id": 4
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "italy"
+        },
+        "geometry": {
+          "coordinates": [
+            12.662556084315298,
+            42.535664413839214
+          ],
+          "type": "Point"
+        },
+        "id": 5
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "netherlands"
+        },
+        "geometry": {
+          "coordinates": [
+            5.616221590599537,
+            51.97749089204109
+          ],
+          "type": "Point"
+        },
+        "id": 6
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "england"
+        },
+        "geometry": {
+          "coordinates": [
+            -2.2237156609618864,
+            54.320581297709
+          ],
+          "type": "Point"
+        },
+        "id": 7
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "france"
+        },
+        "geometry": {
+          "coordinates": [
+            2.62906808547271,
+            47.838079380730875
+          ],
+          "type": "Point"
+        },
+        "id": 8
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "Austria"
+        },
+        "geometry": {
+          "coordinates": [
+            14.321016714283559,
+            47.60697937061241
+          ],
+          "type": "Point"
+        },
+        "id": 9
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "Germany"
+        },
+        "geometry": {
+          "coordinates": [
+            10.010398693598034,
+            51.117106213526085
+          ],
+          "type": "Point"
+        },
+        "id": 10
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "spain"
+        },
+        "geometry": {
+          "coordinates": [
+            -3.996752218581406,
+            41.28199495289249
+          ],
+          "type": "Point"
+        },
+        "id": 11
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "us"
+        },
+        "geometry": {
+          "coordinates": [
+            -71.0581645109019,
+            42.35996374683728
+          ],
+          "type": "Point"
+        },
+        "id": 12
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "brazil"
+        },
+        "geometry": {
+          "coordinates": [
+            -51.805639336828676,
+            -9.532256893535518
+          ],
+          "type": "Point"
+        },
+        "id": 13
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "colombia"
+        },
+        "geometry": {
+          "coordinates": [
+            -73.10510730218056,
+            3.1339925509333
+          ],
+          "type": "Point"
+        },
+        "id": 14
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "venezuela"
+        },
+        "geometry": {
+          "coordinates": [
+            -65.78287655834801,
+            7.657173679455681
+          ],
+          "type": "Point"
+        },
+        "id": 15
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "peru"
+        },
+        "geometry": {
+          "coordinates": [
+            -75.24125296852122,
+            -10.14155860073123
+          ],
+          "type": "Point"
+        },
+        "id": 16
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "honduras"
+        },
+        "geometry": {
+          "coordinates": [
+            -86.92184355958659,
+            14.731800713072815
+          ],
+          "type": "Point"
+        },
+        "id": 17
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "costa rica"
+        },
+        "geometry": {
+          "coordinates": [
+            -84.2185415776167,
+            10.287445048766514
+          ],
+          "type": "Point"
+        },
+        "id": 18
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "country": "guatemala"
+        },
+        "geometry": {
+          "coordinates": [
+            -90.3659196877632,
+            15.64482464478715
+          ],
+          "type": "Point"
+        },
+        "id": 19
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "region": "indonesia"
+        },
+        "geometry": {
+          "coordinates": [
+            106.89083724641671,
+            -6.141263777443271
+          ],
+          "type": "Point"
+        },
+        "id": 20
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "region": "bali"
+        },
+        "geometry": {
+          "coordinates": [
+            115.21969966428497,
+            -8.64432109929389
+          ],
+          "type": "Point"
+        },
+        "id": 21
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "region": "sumatra"
+        },
+        "geometry": {
+          "coordinates": [
+            102.63467893875918,
+            -0.21378905906415469
+          ],
+          "type": "Point"
+        },
+        "id": 22
+      }
+    ]
+  }
