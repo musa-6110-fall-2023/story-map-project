@@ -15,23 +15,26 @@
 <body>
   <main>
 
-    <article class="slide-detail" id="main-view">
-
-      <section id="section01" class="cover">
-        
-        <h1>Ji Yoon Bae</h1>
-        <p><i>"How passive architectural components, informed by new sustainable materials and advanced digital technologies,<br>
-          improve building performance in response to the current socio-climate contexts?"</i></p>
-        <a href="#map"><span></span>Scroll</a>
-      </section>
-  
-    </article>
-
     <div class="map-container">
       <div class="map" id="map"></div>
     </div>
-    <section class="slide-section" id=slide-start>
 
+    <section class="slide-section" id="slide-start">
+
+      <article class="slide-cover" id="cover-page">
+        
+        <section id="section01" class="cover">
+        
+          <h1>Ji Yoon Bae</h1>
+          <p><i>"How passive architectural components, informed by new sustainable materials and advanced digital technologies,<br>
+            improve building performance in response to the current socio-climate contexts?"</i></p>
+          <a href="#profile"><span></span>Scroll</a>
+        </section>
+
+      </article>
+     
+
+      <!-- Profile Page -->
       <article class="slide" id="profile">
         <h1 style="font-size: 20px;"><b>Ji Yoon Bae</b></h1>
 
@@ -49,11 +52,16 @@
         <a href = "mailto: jibae@design.upenn.edu">Email Me!</a>
       </article>
 
+      <!-- Research Map Page -->
       <article class="slide" id="research-map">
         <h2>Research Interests</h2>
-        <img src="img/Research_Map.jpg" alt="researchMap" width="100%" height="100%">
-      </article>
 
+        <img src="img/research-map.png" alt="researchMap" width="80%" height="80%" style="margin-left:5%;">
+
+        
+      </article>
+      
+      <!-- NeoBrick Page -->
       <article class="slide" id="neobrick">
         <h2>NeoBrick</h2>
         <p><i>Environmentally Informed 3d-Printed Lattice Brick for Modulating Indoor Thermal Comfort</i></p>
@@ -97,19 +105,26 @@
           passive ventilation system for enhancing the
           thermal environment and energy efficiency.</p>
 
-          <img class="mySlides" src="img/Neobrick_02.jpg">
-          <img class="mySlides" src="img/Neobrick_03.jpg">
-          <img class="mySlides" src="img/Neobrick_04.jpg">
-          <img class="mySlides" src="img/Neobrick_05.jpg">
+        <img class="mySlides" src="img/Neobrick_04.jpg">
+        <img class="mySlides" src="img/Neobrick_05.jpg">
+        <img class="mySlides" src="img/Neobrick_02.jpg">
+        <img class="mySlides" src="img/Neobrick_03.jpg">
+        <img class="mySlides" src="img/Neobrick_06.jpg">
 
-          <button class="pre-button" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="next-button" onclick="plusDivs(+1)">&#10095;</button>
+
+        <button class="pre-button" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="next-button" onclick="plusDivs(+1)">&#10095;</button>
 
       </article>
 
+      <!-- HoloWal page-->
       <article class="slide" id="holowall">
 
         <h2>HoloWall</h2>
+        <p><i>A Mixed Reality-Informed Hollow Core Wall Assembly</i></p>
+        <p>Leslie Lok, Ji Yoon Bae <em style="font-size: 13px;">(Copyright @ RUBI Lab, Cornell)</em></p>
+        <a href = "https://2022.acadia.org/schedule22/" target="_blank" rel="noopener noreferrer">Full Paper</a>
+        <p></p>
         <iframe width="100%" height="315px" src="https://www.youtube.com/embed/iAzDS8P5vG0?si=gCi5cuH1b42MY2nP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
         <p>HoloWall is a wall assembly that integrates mixed reality (MR) protocols with nonuniformly
@@ -132,11 +147,124 @@
           process facilitates the reuse of discarded wood wastes for the customized HCCLT assembly
           and provides an intuitive workflow for expert and nonexpert users.</p>
 
-          <img class="mySlides_02" src="img/Holowall_02.jpg">
+        <img class="mySlides_02" src="img/Holowall_02.jpg">
+        <img class="mySlides_02" src="img/Holowall_03.jpg">
+        <img class="mySlides_02" src="img/Holowall_05.jpg">
+        <img class="mySlides_02" src="img/Holowall_04.jpg">
+
+
+        <button class="pre-button" onclick="plusDivsHolo(-1)">&#10094;</button>
+        <button class="next-button" onclick="plusDivsHolo(+1)">&#10095;</button>
+
+      </article>
+      
+      <!-- TDZ 2.0 Page-->
+      <article class="slide" id="tdz-2">
+
+        <h2>Timber De-standardized 2.0</h2>
+        <p><i>Mixed Reality Visualizations and User Interface <br>for Processing Irregular Timber</i></p>
+        <p>Leslie Lok, Ji Yoon Bae <em style="font-size: 13px;">(Copyright @ RUBI Lab, Cornell)</em></p>
+        <a href = "https://caadria2022.org/timber_de-standardized_2.0__mixed_reality_visualizations_and_user_interface_for_processing_irregular_timber/" target="_blank" rel="noopener noreferrer">Full Paper</a>
+        <p></p>
+        <img src="img/TD2_01.jpg" alt="neobrick_01" width="100%" height="100%">
+
+        <p>
+          Timber De-Standardized 2.0 is a mixed reality (MR) user interface (UI) that utilizes 
+          timber waste produced by manufacturing dimensional lumber, suggesting an expanded 
+          notion for “material usability” in timber construction. The expanded notion of designing 
+          with discarded logs not only requires new tools and technologies for cataloguing, 
+          structuring, and fabricating. It also relies on new methods and platforms for 
+          the visualization and design of these structures. As a MR UI, Timber De-Standardized 
+          enables professionals and non-professionals alike to seamlessly design with irregular 
+          logs and to create viable structural systems using an intuitive MR environment. 
+          In order to develop a MR environment with this level of competency, the research aims 
+          to finesse the visualization techniques in the immersive full-scale 3D environment 
+          and to minimize the use of alternative 2D UI(s). The research methodology focuses 
+          on (1) cataloguing and extracting basic properties of various tree logs, 
+          (2) refining mesh visualization for better user interaction, and (3) developing 
+          the MR UI to increase user design agency with custom menu lists and operations. 
+          This methodology will extend the usability of MR UI protocols to a broader audience 
+          while democratizing design and enabling the user as co-creator.
+        </p>
+
+        <img class="mySlides_03" src="img/TD2_02.jpg">
+        <img class="mySlides_03" src="img/TD2_03.jpg">
+        <img class="mySlides_03" src="img/TD2_04.jpg">
+
+        <button class="pre-button" onclick="plusDivsTd2(-1)">&#10094;</button>
+        <button class="next-button" onclick="plusDivsTd2(+1)">&#10095;</button>
 
       </article>
 
-    </div>
+      <!--Weeping Brick-->
+      <article class="slide" id="weepingbrick">
+
+        <h2>Weeping Brick</h2>
+        <p><i>The Modular Living Wall System Using 3D Printed Porous Ceramic Materials</i></p>
+        <p>Ji Yoon Bae, Daekwon Park </p>
+        <a href = "https://link.springer.com/chapter/10.1007/978-981-13-8410-3_28" target="_blank" rel="noopener noreferrer"></a>>Full Paper</a>
+        <p></p>
+        <img src="img/Weeping_01.jpg" alt="weepingBrick_01" width="100%" height="100%">
+
+        <p>
+          The goal of this research is to design and fabricate a modular living wall brick system 
+          that purifies and cools air for various indoor environments. The research utilizes 
+          ceramic 3d printing techniques for fabrication; and living plants in conjunction 
+          with evaporative cooling techniques for indoor air quality control. The brick is 
+          made of soil which become porous after firing or drying. Water from the reservoirs 
+          slowly weep through the porous brick, creating a layer of water on the surface of 
+          the brick. The air movement around the saturated brick creates evaporative cooling 
+          and the hydro-seeded plants absorb water from the surface. The shape and texture of 
+          the Weeping Brick maximizes the cooling effect via large surface area. As an 
+          aggregated wall system, the water circulates from unit to unit by gravity through 
+          interconnected reservoirs embedded within each unit. The plants and moss transform 
+          the Weeping Brick into a living wall system, purifying and conditioning the indoor air.
+        </p>
+
+        <img class="mySlides_04" src="img/Weeping_04.jpg">
+        <img class="mySlides_04" src="img/Weeping_02.jpg">
+        <img class="mySlides_04" src="img/Weeping_03.jpg">
+
+
+        <button class="pre-button" onclick="plusDivsWeeping(-1)">&#10094;</button>
+        <button class="next-button" onclick="plusDivsWeeping(+1)">&#10095;</button>
+
+      </article>
+
+      <article class="slide" id="publication">
+        <h2>Publication</h2>
+        <p></p>
+        <p>
+          <b>Bae, Ji Yoon</b>, Jenny Sabin. 2023. 
+          NeoBrick: Environmentally Informed 3d-Printed Lattice Brick for Modulating Indoor Thermal Comfort. 
+          <br>In proceedings of 2023 UIA World Congress of Architects. Copenhagen. Denmark.
+        </p>
+
+        <p>
+          Lok, Leslie, Ji Yoon Bae. 2022. 
+          HolloWall: A Mixed Reality-Informed Hollow Core Wall Assembly. 
+          <br>In Proceedings of the 42nd Annual Conference of the Association for Computer Aided Design in Architecture: Hybrids & Haecceities.
+        </p>
+
+        <p>
+          Lok, Leslie, Ji Yoon Bae. 2022. 
+          Timber De-Standardized 2.0 : Mixed Reality Visualizations and User Interface for Processing Irregular Timber.
+          <br>In Proceedings of the 2022 International Conference of the Association for Computer-Aided Architectural Design Research in Asia: Post-Carbon, 121-30.
+        </p>
+
+        <p>
+          Bae, Ji Yoon, Daekwon Park. 2019. 
+          Weeping Brick: The Modular Living Wall System Using 3D Printed Porous Ceramic Materials. 
+          <br>In Proceedings of the 18th International Conference, CAAD Futures 2019, Selected Papers (pp. 399-409).
+        </p>
+
+        <section class="homebutton" id="home-button">
+          <a href="#cover-page"><span></span>Home</a>
+        </section>
+        
+      </article>
+
+    </section>
   </main>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
