@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Story</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div>
+
+    <div class ="intro">
+      <img src='img\japan-title.jpg' id='title-img'/>
+      <div class="intro-text">Family Trip to Japan</div>
+      <div class="intro-subtitle">Tokyo, Osaka, Hakone, Hokkaido</div>
+    </div>
+
+    <div class="map-container">
+      <div class="map" id="map"></div>
+    </div>
+
+    <section class="slide-section">
+      
+      <article class="slide" id="second-slide">
+        <h1>Family Trip with the Matriarch</h1>
+        <p>A couple years ago, my grandmother received knee surgery and was feeling a little down. 
+          My family decided to lift her spirits by setting up a trip to Japan, one of her favourite destinations.
+          We wanted to provide a change of scenery and plan some quality time with the extended family.</p>
+        <p>This map shows the cities and key memories made in Japan.</p>
+        <img src='img\koi.jpg' class='slide-img'/>
+      </article>
+
+      <article class="slide" id="third-slide">
+        <h2>Tokyo</h2>
+        <p>Our first stop was Tokyo, the capital of Japan. Most of Japan is a temperate climate, which allows the country to have four distinct seasons.
+          We spent some time appreciating the colourful foliage of the Japanese gardens. 
+          <p>The ginko trees sport yellow fan-shaped leaves, and the well-known Japanese maple have seven tipped leaves of a vibrant red hue.</p>
+          The garden we visited had a traditional pond with koi fish, or Japanese ornamental carp.
+        </p>
+        <img src='img\garden.jpg' class='slide-img'/>
+      </article>
+
+      <article class="slide" id="fourth-slide">
+        <h2>Osaka</h2>
+        <p> Our second stop was Osaka, the third largest city in Japan by population. It is famously known to be a foodie capital - popular street foods, such as takoyaki, are a must-try while visiting here.</p>
+        <p>For dinner, we decided to get teppanyaki, which is a style of cuisine that uses a flat iron griddle to cook food. The chef held a small fire show while cooking the meat.
+        </p>
+        <video width="320" controls>
+          <source src='img\teppanyaki-video.mp4' type="video/mp4">
+      </article>
+
+      <article class="slide" id="fifth-slide">
+        <h2>Hakone</h2>
+        <p> Next we visited Hakone, which is known for onsen (hot springs) and the great sights of Mount Fuji, the iconic volcano often used to symbolize the country.  </p>
+        <p> Hakone also has a shinto shrine that is open to visitors. The shrine is associated with a priest who quelled the anger of a nine headed dragon that lives beneath the lake. Here is a fountain that depicts the dragon.</p>
+        <video width="320" controls>
+          <source src='img\hakone-fountain.mp4' type="video/mp4">
+        </video>
+
+      </article>
+
+      <article class="slide" id="sixth-slide">
+        <h2>Hokkaido</h2>
+        <p>Hokkaido is one of the northernmost islands of the Japanese archipelago. Due to its colder climate, it is known for winter activities, such as skiing, but it also holds great natural hot springs. 
+          Ryokans are traditional Japanese establishments that serve as an inn to the onsen guests. They feature tatami mat floors and low seated tables and often serve traditional meals.
+        </p>
+        <img src='img\ryokan.jpg' class='slide-img'/>
+      </article>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>
