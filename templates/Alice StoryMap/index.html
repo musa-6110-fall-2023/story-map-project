@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Story</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <main>
+
+    <div class ="intro">
+      <img src='img\japan-title.jpg' id='title-img'/>
+      <div class="intro-text">Family Trip to Japan</div>
+      <div class="intro-subtitle">Tokyo, Osaka, Hakone, Hokkaido</div>
+    </div>
+
+    <div class="map-container">
+      <div class="map" id="map"></div>
+    </div>
+
+    <section class="slide-section">
+      
+      <article class="slide" id="second-slide">
+        <h1>Family Trip with the Matriarch</h1>
+        <p>A couple years ago, my grandmother received knee surgery and was feeling a little down. 
+          My family decided to lift her spirits by setting up a trip to Japan, one of her favourite destinations.
+          We wanted to provide a change of scenery and plan some quality time with the extended family.</p>
+        <p>This map shows the cities and key memories made in Japan.</p>
+        <img src='img\koi.jpg' class='slide-img'/>
+      </article>
+
+      <article class="slide" id="third-slide">
+        <h2>Tokyo</h2>
+        <p>Our first stop was Tokyo, the capital of Japan. Most of Japan is a temperate climate, which allows the country to have four distinct seasons.
+          We spent some time appreciating the colourful foliage of the Japanese gardens. 
+          The ginko trees sport yellow fan-shaped leaves, and the well-known Japanese maple have seven tipped leaves of a vibrant red hue.
+          The garden we visited had a traditional pond with koi fish, or Japanese ornamental carp.
+        </p>
+      </article>
+
+      <article class="slide" id="fourth-slide">
+        <h2>Osaka</h2>
+        <p></p>
+      </article>
+
+      <article class="slide" id="fifth-slide">
+        <h2>Hakone</h2>
+        <p>
+    
+        </p>
+        <video width="320" controls>
+          <source src='img\hakone-fountain.mp4' type="video/mp4">
+        </video>
+
+      </article>
+
+      <article class="slide" id="sixth-slide">
+        <h2>Hokkaido</h2>
+        <p></p>
+      </article>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>
