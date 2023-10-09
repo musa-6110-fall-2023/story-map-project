@@ -11,7 +11,7 @@ baseTileLayer.addTo(map);
 // ## Interface Elements
 const slides = document.querySelectorAll('.slide');
 const slidePrevButton = document.querySelector('#prev-slide');
-const slideNextButton = document.querySelector('#next-slide');
+const slideNextButton = document.querySelector('#next-slide')
 
 // ## The SlideDeck object
 const deck = new SlideDeck(slides, map);

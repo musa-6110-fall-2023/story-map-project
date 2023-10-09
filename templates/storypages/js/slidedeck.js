@@ -32,21 +32,21 @@ class SlideDeck {
 
     // Create an L.icon object
     function calcStyle(feature) {
-      if (feature.properties.category === "landscape design") {
+      if (feature.properties.category === 'landscape design') {
         return {
           stroke: false,
           fillColor: '#CC4A45',
           fillOpacity: 0.9,
           weight: 2,
         };
-      } else if (feature.properties.category === "urban design") {
+      } else if (feature.properties.category === 'urban design') {
         return {
           stroke: false,
           fillColor: '#E86651',
           fillOpacity: 0.9,
           weight: 2,
         };
-      } else if (feature.properties.category === "architecture design") {
+      } else if (feature.properties.category === 'architecture design') {
         return {
           stroke: false,
           fillColor: '#E88958',
@@ -98,18 +98,18 @@ class SlideDeck {
     // }
 
     const geoJsonLayer = L.geoJSON(data, {
-          style: calcStyle,  
-//          pointToLayer: (p, latlng) => L.marker(latlng, { /* specify icon to use */ }) 
-          pointToLayer: (p, latlng) => L.circleMarker(latlng, { 
-            /* specify some style */ 
-              stroke: false,
-              fillColor: '#FFAD61',
-              fillOpacity: 0.9,
-              radius: 8, 
-          }
-          ) 
-          })
-        .bindTooltip((l) => l.feature.properties.title) //set tooltip display
+      style: calcStyle,
+      //          pointToLayer: (p, latlng) => L.marker(latlng, { /* specify icon to use */ })
+      pointToLayer: (p, latlng) => L.circleMarker(latlng, {
+        /* specify some style */
+        stroke: false,
+        fillColor: '#FFAD61',
+        fillOpacity: 0.9,
+        radius: 8,
+      },
+      ),
+    })
+        .bindTooltip((l) => l.feature.properties.title) // set tooltip display
         .addTo(this.dataLayer);
 
     return geoJsonLayer;
