@@ -4,18 +4,106 @@ body {
   box-sizing: border-box;
   height: 100vh;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rockwell', serif;
+}
+
+
+
+.header-contianer{
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #212529!important;
+}
+
+.text-white{
+  color: #fff
+}
+
+.title-contianer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);  /* Semi-transparent black background */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  opacity: 0;
+  transition: opacity 0.3s; /* Smooth transition effect */
+}
+
+.text-image-container{
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+#title{
+  color: #7ecb9d;
+  font-family: 'Rockwell', serif;
+  font-size: 60px;
+  text-align: center;
+}
+
+#sub-title{
+  color: #8eb0d2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+
+.header_sw{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-left: 10%;
+  list-style: none;
 }
 
 .map-container {
   position: sticky;
   top: 0;
+  
   height: 100vh;
   z-index: 0;
 }
 
 .map {
   height: 100%;
+}
+
+.leaflet-tile {
+  filter: brightness(0.55) contrast(5) saturate(0.25) opacity(80%) sepia(40%); /* Adjust these values as desired */
+}
+
+.background-page{
+  height: 100vh;
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+#background-pic {
+  width:100%;
+  height:100%;
+  object-fit: cover;
 }
 
 .slide-section {
@@ -44,6 +132,11 @@ body {
 
 .slide:first-child {
   margin-top: 0;
+}
+
+#append{
+  width: 25rem;
+  align-items: center;
 }
 
 .slide:last-child {
@@ -81,3 +174,4 @@ body {
 .slide-nav-select {
   min-width: 0;
 }
+
