@@ -29,8 +29,8 @@ main {
   overflow-y: auto;
 
   box-shadow: -0.5rem 0 1rem grey;
-  padding: 1rem;
-  width: 20rem;
+  padding: 3rem;
+  width: 30rem;
 }
 
 .slide-content {
@@ -67,4 +67,8 @@ main {
 
 .slide-nav-select {
   min-width: 0;
+}
+
+.img-eye{
+  width: 20px;
 }
