@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Junyi's Selected Work</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  
+</head>
+<body>
+  <main>
+    <!-- The map container, used by Leaflet -->
+    <div class="map" id="map"></div>
+    
+    <!-- The slides container -->
+    <section class="slide-section">
+      <article class="slide" id="title-slide">
+        <h1>Projects Overview</h1>
+          <p>Take a quick tour of Junyi's academic and professional projects by geographic regions!</p>
+          <p>Project categories range from landscape design, urban design, and architecture design to drawings and community engagement.</p>
+        
+      </article>
+
+      <article class="slide" id="alaska">
+        <h2>Alaska Region</h2>
+          <h3>Trans-Alaska: Post-Oil Urban Regeneration</h3>
+            <p>05/2021 - 12/2021, Group Academic Work</p>
+            <p><strong>Location:</strong> North Pole, Glennallen, and Valdez</p>
+            <p><strong>Catagory:</strong> Urban Design</p>
+
+      </article>
+
+      <article class="slide" id="berkeley">
+        <h2>Berkeley</h2>
+          <h3>Davis Hall Green Wall</h3>
+            <p>09/2021, Individual Academic Work</p>
+            <p><strong>Location:</strong> Berkeley, California</p>
+            <p><strong>Catagory:</strong> Drawing</p>
+            <iframe width=100% height="250" src="https://www.youtube.com/embed/9pZ8LqKtYwA?si=V3ofzCdb7UXU8qdt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- https://github.com/jwbee/AlamedaCountyPropertyTax/blob/main/berkeley-council-map.geojson?short_path=c37c0ec -->
+          <h3>UC Berkeley Campus ADA Study</h3>
+            <p>06/2023 - 08/2023, Professional Work</p>
+            <p><strong>Location:</strong> Berkeley, California</p>
+            <p><strong>Catagory:</strong> Urban Design</p>
+      </article>
+
+      <article class="slide" id="south-california">
+        <h2>South California</h2>
+          <h3>Friendship Park: Reunion on the Border</h3>
+            <p>02.2021 - 05.2021, 03.2022 - 05.2022, Individual Academic Work</p>
+            <p><strong>Location:</strong> San Diego, California</p>
+            <p><strong>Catagory:</strong> Landscape Design</p>
+          <h3>Back Home: Mexican Community Design</h3>
+            <p>02.2021 - 12.2021, Individual Academic Work</p>
+            <p><strong>Location:</strong> San Diego, California</p>
+            <p><strong>Catagory:</strong> Landscape Design</p>
+      </article>
+
+      <article class="slide" id="great-lakes">
+        <h2>Great Lakes</h2>
+          <h3>Pearl of Green: Miegakure (Hide and Reveal)</h3>
+            <p>10.2021 - 12.2021, Group Academic Work</p>
+            <p><strong>Location:</strong> Chicago, Illinois</p>
+            <p><strong>Catagory:</strong> Landscape Design</p>
+          <h3>Michigan State University Facilities and Land Use Plan</h3>
+            <p>06.2023 - 08.2023, Professional Work</p>
+            <p><strong>Location:</strong> East Lansing, Michigan</p>
+            <p><strong>Catagory:</strong> Urban Design</p>
+      </article>
+
+      <article class="slide" id="philadelphia">
+        <h2>Philadelphia</h2>
+          <h3>Planting for the Future: Post-Industrial Delaware River Waterfront</h3>
+            <p>01.2023 - 05.2023, Individual Academic Work</p>
+            <p><strong>Location:</strong> Fishtown County, Philadelphia, Pennsylvania</p>
+            <p><strong>Catagory:</strong> Landscape Design</p>
+          <h3>Capturing the Moon: Symbolism of Emotional Sacredness</h3>
+            <p>10.2022 - 12.2022, Individual Academic Work</p>
+            <p><strong>Location:</strong> Wissahickon Valley, Philadelphia, Pennsylvania</p>
+            <p><strong>Catagory:</strong> Landscape Design</p>
+      </article>
+
+      <article class="slide" id="boston">
+        <h2>Boston</h2>
+          <h3>Joyful Stitch</h3>
+            <p>06.2023 - 08.2023, Professional Work</p>
+            <p><strong>Location:</strong> Leather District, Boston, Massachusetts</p>
+            <p><strong>Catagory:</strong> Community Engagement</p>
+            <p>Joyful Stitch is a temporary installation designed to bring joy and provide a space for residents of the area to connect. This interactive artwork is inspired by the invention of the first sewing machine in Boston and tells the story of the contributions of the Leather District and Chinatown to the history of the textile industry.</p>
+            <a class="link" href="https://pprakkamakul2.wixsite.com/joyfulstitch">Project website</a>
+      </article>
+
+      <div class="slide-controls">
+        <button class="slide-nav-button" id="prev-slide">⧏</button>
+        <button class="slide-nav-button" id="next-slide">⧐</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Planting for the Future: Post-Industrial Delaware River Waterfront",
+        "date": "01.2023 - 05.2023",
+        "type": "individual academic work",
+        "category": "landscape design",
+        "instructor": "Karen M’Closkey",
+        "location": "Fishtown County, Philadelphia, Pennsylvania",
+        "media": "Digital drawing & physical modeling"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.12497468160959,
+          39.96822642748734
+        ],
+        "type": "Point"
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Capturing the Moon: Symbolism of Emotional Sacredness",
+        "date": "10.2022 - 12.2022",
+        "type": "individual academic work",
+        "category": "landscape design",
+        "instructor": "Douglas Robb",
+        "location": "Wissahickon Valley, Philadelphia, Pennsylvania",
+        "media": "Digital drawing & physical modeling"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.22313845586301,
+          40.065829026567854
+        ],
+        "type": "Point"
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Falling",
+        "date": "9.2022",
+        "type": "1:1 Field Measurement Drawing",
+        "category": "drawing",
+        "location": "Wissahickon Valley, Philadelphia, Pennsylvania",
+        "media": "pen"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.22096847902965,
+          40.065089541693766
+        ],
+        "type": "Point"
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Joyful Stitch",
+        "date": "06.2023 - 08.2023",
+        "type": "professional work",
+        "category": "community engagement",
+        "project leader": "Ponnapa Prakkamakul",
+        "location": "Leather District, Boston, Massachusetts"
+      },
+      "geometry": {
+        "coordinates": [
+          -71.05725813857131,
+          42.352283593653596
+        ],
+        "type": "Point"
+      },
+      "id": 3
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pearl of Green: Miegakure (Hide and Reveal)",
+        "date": "10.2021 - 12.2021",
+        "type": "group academic work",
+        "category": "landscape design",
+        "co-worker": "Xuan Lin, Kelin Mu",
+        "location": "Chicago, Illinois",
+        "media": "Digital drawing"
+      },
+      "geometry": {
+        "coordinates": [
+          -87.65206989588485,
+          41.985117723437156
+        ],
+        "type": "Point"
+      },
+      "id": 4
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Davis Hall Green Wall",
+        "date": "09.2021",
+        "type": "individual academic work",
+        "category": "drawing",
+        "instructor": "Chip Sullivan",
+        "location": "Berkeley, California",
+        "media": "watercolor"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.25827523518416,
+          37.87450993852123
+        ],
+        "type": "Point"
+      },
+      "id": 5
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Friendship Park: Reunion on the Border",
+        "date": "02.2021 - 05.2021, 03.2022 - 05.2022",
+        "type": "individual academic work",
+        "category": "landscape design",
+        "instructor": "Karl Kullmann, Damir Hurdich",
+        "location": "San Diego, California",
+        "media": "Digital drawing"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.12279648258328,
+          32.534527123476536
+        ],
+        "type": "Point"
+      },
+      "id": 6
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Back Home: Mexican Community Design",
+        "date": "02.2021 - 12.2021",
+        "type": "individual academic work",
+        "category": "landscape design",
+        "location": "San Diego, California",
+        "media": "Digital drawing"
+      },
+      "geometry": {
+        "coordinates": [
+          -117.078406998515,
+          32.590313801834114
+        ],
+        "type": "Point"
+      },
+      "id": 7
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Trans-Alaska: Post-Oil Urban Regeneration",
+        "date": "05.2021 - 12.2021",
+        "type": "group academic work",
+        "category": "urban design",
+        "co-worker": "Xuan Liu",
+        "location": "Valdez, Alaska",
+        "media": "Digital drawing"
+      },
+      "geometry": {
+        "coordinates": [
+          -146.37494634234056,
+          61.087493234611145
+        ],
+        "type": "Point"
+      },
+      "id": 8
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Trans-Alaska: Post-Oil Urban Regeneration",
+        "date": "05.2021 - 12.2021",
+        "type": "group academic work",
+        "category": "urban design",
+        "co-worker": "Xuan Liu",
+        "location": "Glennallen, Alaska",
+        "media": "Digital drawing"
+      },
+      "geometry": {
+        "coordinates": [
+          -145.5481195369216,
+          62.10932148446071
+        ],
+        "type": "Point"
+      },
+      "id": 9
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Trans-Alaska: Post-Oil Urban Regeneration",
+        "date": "05.2021 - 12.2021",
+        "type": "group academic work",
+        "category": "urban design",
+        "co-worker": "Xuan Liu",
+        "location": "North Pole, Alaska",
+        "media": "Digital drawing"
+      },
+      "geometry": {
+        "coordinates": [
+          -147.34913846892232,
+          64.75134144476874
+        ],
+        "type": "Point"
+      },
+      "id": 10
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Performing Oasis: Art Pilgrimage",
+        "date": "06.2023 - 08.2023",
+        "type": "group academic work",
+        "category": "architecture design",
+        "co-worker": "Sihan Zhao",
+        "location": "Siwa Oasis, Egypt",
+        "media": "Digital drawing"
+      },
+      "geometry": {
+        "coordinates": [
+          25.517594959446058,
+          29.200943238478473
+        ],
+        "type": "Point"
+      },
+      "id": 11
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "LA Port Connectivity",
+        "date": "06.2022 - 07.2022",
+        "type": "professional work",
+        "category": "urban design",
+        "project leader": "Ying-yu Huang",
+        "location": "Los Angeles, California"
+      },
+      "geometry": {
+        "coordinates": [
+          -118.2778260768264,
+          33.72660434311699
+        ],
+        "type": "Point"
+      },
+      "id": 12
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Michigan State University Facilities and Land Use Plan",
+        "date": "06.2023 - 08.2023",
+        "type": "professional work",
+        "category": "urban design",
+        "project leader": "Tyler Patrick and Romil Sheth",
+        "location": "East Lansing, Michigan"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.4809094500271,
+          42.72559668913698
+        ],
+        "type": "Point"
+      },
+      "id": 13
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lake Erie Coastal Units",
+        "date": "09.2023 - present",
+        "type": "professional work",
+        "category": "urban design",
+        "project leader": "Sean Burkholder",
+        "location": "Lake Erie, New York"
+      },
+      "geometry": {
+        "coordinates": [
+          -79.01669333780501,
+          42.69134594181227
+        ],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Guangzhou South Station",
+        "date": "07.2023",
+        "type": "professional work",
+        "category": "landscape design",
+        "project leader": "Ning Deng",
+        "location": "Guangzhou, China"
+      },
+      "geometry": {
+        "coordinates": [
+          113.26702326521024,
+          22.99335144565532
+        ],
+        "type": "Point"
+      },
+      "id": 15
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "UC Berkeley Campus ADA Study",
+        "date": "06.2023 - 08.2023",
+        "type": "professional work",
+        "category": "landscape design",
+        "project leader": "Caitlyn Clauson",
+        "location": "Berkeley, California"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.26507256512994,
+          37.871789886438634
+        ],
+        "type": "Point"
+      },
+      "id": 16
+    }
+  ]
+}
